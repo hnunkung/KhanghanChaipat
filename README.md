@@ -1,4 +1,4 @@
-# Khang Han-naam Chaipatthana
+# Khang Han-naam Chaipatthana 
 
 Our Majesty is aware of the seriousness of the problem. And caring for the people who have to face the problem of waste water By using mechanical aeration . Is a simple invention But is highly effective in treating waste water Which is well known as Chaipattana Water Turbine And used to improve water quality in various locations All over the region
 
@@ -28,3 +28,4 @@ Colleagues from the Faculty of Architecture, Communication Arts Program. They ar
 - ภาวรินทร์ ทัดทาน 
 - วริทธิ์ มหิกุล
 
+https://www.figma.com/file/DmhAQrP38bBSh7fgudkizO/Mobile_Khanghannaam?node-id=0%3A1
