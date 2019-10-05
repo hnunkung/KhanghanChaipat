@@ -5,6 +5,9 @@ Our Majesty is aware of the seriousness of the problem. And caring for the peopl
 # Files
 Under construction
 
+# What we do!
+Make a website.
+
 ## Member
 -  Nantatchaporn Tangsuk
 - Rattanawich Sinborwonphichai
