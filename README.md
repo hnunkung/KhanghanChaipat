@@ -28,4 +28,9 @@ Colleagues from the Faculty of Architecture, Communication Arts Program. They ar
 - ภาวรินทร์ ทัดทาน 
 - วริทธิ์ มหิกุล
 
+## Mock-up Playground
 https://www.figma.com/file/DmhAQrP38bBSh7fgudkizO/Mobile_Khanghannaam?node-id=0%3A1
+
+
+# Demo
+https://hnunkung.github.io/KhanghanChaipat/
