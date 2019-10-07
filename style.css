@@ -1,0 +1,205 @@
+/* Css */
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #01379c;
+    /*background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
+    font-family: "Ailerons";
+    color: rgb(219, 219, 219);
+    font-size: 19px;
+    font-family: 'Chonburi';
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: kanit;
+}
+
+/* .font-size-xs {
+    font-size: 20px;
+} */
+
+.letter1 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-size: 80px;
+    letter-spacing: 8px;
+
+}
+
+.letter2 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    font-size: 50px;
+}
+
+.letter3 {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-size: 80px;
+    letter-spacing: 8px;
+}
+
+.letter4 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.letter5 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+.letter6 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+
+.letter7 {
+    position: absolute;
+    top: 98%;
+    left: 0;
+}
+
+.letter8 {
+    position: absolute;
+    top: 120%;
+    left: 30%;
+}
+
+.letter9 {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+}
+
+.letter10 {
+    position: absolute;
+    top: 170%;
+    left: 80%;
+}
+
+.letter11 {
+    position: absolute;
+    top: 200%;
+    left: 20%;
+}
+
+
+/*Object Placeholder*/
+.box1 {
+    /* background: rgb(10, 10, 56); */
+    height: auto;
+    width: 70%;
+    position: absolute;
+    top: -45%;
+    left: 40%;
+    filter: invert(1);
+
+    /* transform: rotate(45deg) */
+}
+
+.box2 {
+    /* background: rgb(10, 10, 56); */
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.box3 {
+    /* background: rgb(10, 10, 56); */
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+
+}
+
+.box4 {
+    /* background: rgb(10, 10, 56); */
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+.box5 {
+    /* background: rgb(10, 10, 56); */
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 130%;
+    left: 60%;
+
+}
+
+.box6 {
+    /* background: rgb(10, 10, 56); */
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 190%;
+    left: 30%;
+    transform: rotate(30deg);
+}
+
+/*Manual Responsive Checkbox*/
+@media only screen and (max-width: 600px) {
+    .box1 {
+        width: 120%;
+        top: -60px;
+        left: 20%;
+    }
+
+
+    .letter1 {
+        position: absolute;
+        top: 88%;
+        left: 10%;
+        font-size: 50px;
+        letter-spacing: 5px;
+
+    }
+
+    .letter2 {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        font-size: 50px;
+    }
+
+    .letter3 {
+        position: absolute;
+        top: 96%;
+        left: 10%;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+
+    .letter4 {
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        font-size: 10px;
+        color: rgb(214, 104, 1);
+    }
+}
