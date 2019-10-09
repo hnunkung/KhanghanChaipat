@@ -58,7 +58,7 @@
 
     <!-- Content -->
     <div class="box1">
-        <img src="Khanghan-FIRSTPAGE.svg">
+        <!-- <img src="" class="clipKhan" width=""> -->
     </div>
     <div class="box2"></div>
     <div class="box3"></div>
@@ -85,10 +85,19 @@
     var rellax = new Rellax('.rellax');
 </script>
 <script type="text/javascript">
-    document.body.addEventListener("touchmove", function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-    }, false);
+    function preventDefault(e) {
+        e.preventDefault();
+    }
+
+    function disableScroll() {
+        document.body.addEventListener('touchmove', preventDefault, {
+            passive: false
+        });
+    }
+
+    function enableScroll() {
+        document.body.removeEventListener('touchmove', preventDefault);
+    }
 </script>
 <!-- Script from Bt4 -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
