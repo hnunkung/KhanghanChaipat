@@ -17,10 +17,12 @@ body {
     font-family: 'Chonburi';
     max-width: 100%;
     overflow-x: hidden;
+    /* -webkit-overflow-scrolling: hidden;
+    -webkit-font-feature-settings: initial; */
 }
 
 p {
-    font-family: kanit;
+    font-family: 'Kanit', sans-serif;
 }
 
 img {
@@ -169,13 +171,14 @@ img {
 }
 
 .box6 {
-    /* background: rgb(10, 10, 56); */
-    height: 400px;
-    width: 400px;
+    /* backgound: rgb(10, 10, 56); */
+    height: 20%;
+    width: 5em;
     position: absolute;
-    top: 190%;
-    left: 30%;
-    transform: rotate(30deg);
+    top: 18%;
+    right: 30%;
+    transform: scaleX(-1);
+    /* transform: rotate(30deg); */
 }
 
 /*Manual Responsive Checkbox*/
@@ -236,7 +239,7 @@ img {
         position: absolute;
         top: 78%;
         left: 7%;
-        font-size: 50px;
+        font-size: 100px;
         letter-spacing: 5px;
 
     }
@@ -252,7 +255,7 @@ img {
         position: absolute;
         top: 85%;
         left: 7%;
-        font-size: 50px;
+        font-size: 100px;
         letter-spacing: 5px;
     }
 
@@ -260,8 +263,102 @@ img {
         position: absolute;
         top: 65%;
         left: 7%;
-        font-size: 10px;
+        font-size: 20px;
         color: rgb(214, 104, 1);
+    }
+}
+
+
+/* bubble */
+
+.bubble,
+.bubble::before,
+.bubble::after {
+    content: '';
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    background-color: #01379c88;
+    right: -0.1em;
+    bottom: 0em;
+    border-radius: 50%;
+    stroke: black;
+    box-shadow: 0 0 0 2px
+}
+
+.bubble {
+    animation:
+        drift 2s infinite,
+        bubble-1 2s infinite;
+    animation:
+        drift 2s infinite,
+        bubble-3 2s infinite;
+    animation:
+        drift 0.5s infinite,
+        bubble-4 2s infinite;
+}
+
+.bubble::before {
+    animation:
+        drift 3s infinite,
+        bubble-2 3s infinite;
+    animation:
+        drift 2s infinite,
+        bubble-1 1s infinite;
+}
+
+.bubble::after {
+    animation:
+        drift 5s infinite,
+        bubble-3 4s infinite;
+}
+
+@keyframes drift {
+
+    0%,
+    100% {
+        filter: opacity(1);
+    }
+
+    15% {
+        filter: opacity(1);
+    }
+}
+
+@keyframes bubble-1 {
+    to {
+        width: 1em;
+        height: 1em;
+        right: -6em;
+        bottom: 3em;
+    }
+}
+
+@keyframes bubble-2 {
+    to {
+        width: 2.5em;
+        height: 2.5em;
+        right: 6em;
+        bottom: 5em;
+    }
+}
+
+@keyframes bubble-3 {
+    to {
+        width: 1em;
+        height: 1em;
+        right: -11em;
+        bottom: 1em;
+    }
+
+}
+
+@keyframes bubble-4 {
+    to {
+        width: 2em;
+        height: 2em;
+        right: -10em;
+        bottom: 7em;
     }
 }
 
@@ -306,6 +403,108 @@ img {
         font-size: 10px;
         color: rgb(214, 104, 1);
     }
+
+    /* bubble */
+
+    .bubble,
+    .bubble::before,
+    .bubble::after {
+        content: '';
+        position: absolute;
+        width: .5em;
+        height: .5em;
+        background-color: #01379c88;
+        right: 0em;
+        bottom: 0em;
+        border-radius: 50%;
+        stroke: black;
+        box-shadow: 0 0 0 2px
+    }
+
+    .bubble {
+        animation:
+            drift 2s infinite,
+            bubble-1 2s infinite;
+        animation:
+            drift 2s infinite,
+            bubble-3 2s infinite;
+        animation:
+            drift 0.5s infinite,
+            bubble-4 2s infinite;
+    }
+
+    .bubble::before {
+        animation:
+            drift 3s infinite,
+            bubble-2 3s infinite;
+        animation:
+            drift 2s infinite,
+            bubble-1 1s infinite;
+    }
+
+    .bubble::after {
+        animation:
+            drift 5s infinite,
+            bubble-3 4s infinite;
+        animation:
+            drift 2s infinite,
+            bubble-1 2s infinite;
+        animation:
+            drift 3s infinite,
+            bubble-2 0.25s infinite;
+        animation:
+            drift 0.5s infinite,
+            bubble-4 2s infinite;
+    }
+
+    @keyframes drift {
+
+        0%,
+        100% {
+            filter: opacity(1);
+        }
+
+        15% {
+            filter: opacity(1);
+        }
+    }
+
+    @keyframes bubble-1 {
+        to {
+            width: 1em;
+            height: 1em;
+            right: -em;
+            bottom: 8em;
+        }
+    }
+
+    @keyframes bubble-2 {
+        to {
+            width: 2.5em;
+            height: 2.5em;
+            right: -6em;
+            bottom: 5em;
+        }
+    }
+
+    @keyframes bubble-3 {
+        to {
+            width: 1em;
+            height: 1em;
+            right: -4em;
+            bottom: 1em;
+        }
+
+    }
+
+    @keyframes bubble-4 {
+        to {
+            width: 2em;
+            height: 2em;
+            right: -5em;
+            bottom: 7em;
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -325,6 +524,10 @@ img {
         top: 10%;
         right: 0%;
         left: auto;
+    }
+
+    .box4 {
+        display: none;
     }
 
 

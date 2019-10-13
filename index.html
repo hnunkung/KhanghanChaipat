@@ -54,17 +54,23 @@
             </form>
         </div>
     </nav> -->
+    <!-- Bubbles -->
+    <div class="box6" id="bubbles_1">
+        <span class="bubble"></span>
 
+    </div>
 
     <!-- Content -->
     <div class="box1">
-        <!-- <img src="" class="clipKhan" width=""> -->
+        <!-- <img src="hamburger-01.svg" class="clipKhan" width=""> -->
     </div>
-    <div class="box2"></div>
+    <div class="box2">
+        <!-- <img src="hamburger-01.svg" class="clipKhan" width="20px"> -->
+    </div>
     <!-- <div class="box3"></div> -->
     <div class="box4"></div>
 
-    <div class="letter1 font-size-xs rellax" data-rellax-speed="8">กังหันน้ำ</div>
+    <div class="letter1 font-size-xs rellax" data-rellax-speed="9">กังหันน้ำ</div>
     <div class="letter2 font-size-xs rellax" data-rellax-speed="6"></div>
     <div class="letter3 font-size-xs rellax" data-rellax-speed="9">ชัยพัฒนา</div>
     <div class="letter4 font-size-xs rellax" data-rellax-speed="8">
@@ -109,4 +115,28 @@
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+<script>
+    let state = 1000;
+    setInterval(() => {
+        if (state < 5000) {
+            setTimeout(() => {
+                goBubbles();
+                state += 550;
+                console.log(state);
+            }, 500);
+        }
+    }, state);
+
+    function goBubbles() {
+        let i = 0;
+        var spans = document.createElement("SPAN");
+        var rand = Math.floor((Math.random() * 6));
+        console.log(rand);
+        spans.classList.add('bubble')
+        document.querySelectorAll('.bubble')[i].style.bottom = rand + `em`;
+        document.getElementById('bubbles_1').appendChild(spans);
+        i++;
+    }
 </script>
