@@ -12,7 +12,7 @@ body {
     background-color: #01379c;
     /*background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
     font-family: "Ailerons";
-    color: rgb(219, 219, 219);
+    color: rgb(255, 255, 255);
     font-size: 19px;
     font-family: 'Chonburi';
     max-width: 100%;
@@ -29,19 +29,115 @@ img {
     min-width: 100%
 }
 
-/* .clipKhan {
-    position: absolute;
-    clip: rect(0px, 500px, 500px, 10px);
-} */
+.clipKhan {
+    position: fixed;
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
 
 /* .font-size-xs {
     font-size: 20px;
-} */
+}
+
+/* navbar */
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 75px;
+    height: 40px;
+    background-image: url('hamburger_01.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 5%;
+    left: 5%;
+    position: fixed;
+    margin: 20px;
+    z-index: 1;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    /* background-color: #2980B9; */
+}
+
+/* The container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all .5s;
+}
+
+/* Dropdown Content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: all .5s;
+    top: 15%;
+    left: 5%;
+    position: fixed;
+    margin: 20px;
+    color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all .5s;
+    font-size: 2vh;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+@media only screen and (max-width: 1440px) {
+    .dropbtn {
+        left: 10%;
+    }
+
+    .dropdown-content {
+        left: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .dropbtn {
+        left: 5%;
+    }
+
+    .dropdown-content {
+        left: 5%;
+    }
+
+}
+
+.show {
+    display: block;
+    transition: all .5s;
+}
 
 .letter1 {
     position: absolute;
     top: 70%;
-    left: 15%;
+    left: 10%;
     font-size: 80px;
     letter-spacing: 8px;
 
@@ -57,7 +153,7 @@ img {
 .letter3 {
     position: absolute;
     top: 80%;
-    left: 15%;
+    left: 10%;
     font-size: 80px;
     letter-spacing: 8px;
 }
@@ -65,7 +161,7 @@ img {
 .letter4 {
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 10%;
 }
 
 .letter5 {
@@ -133,11 +229,10 @@ img {
 
 .box2 {
     /* background: rgb(10, 10, 56); */
-    height: 300px;
-    width: 300px;
     position: absolute;
-    top: 0;
-    left: 5%;
+    width: 50px;
+    top: 20px;
+    left: 0;
 }
 
 .box3 {
