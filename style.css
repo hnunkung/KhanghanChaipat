@@ -124,7 +124,7 @@ img {
     color: white;
     border-left: 2px dashed;
     backdrop-filter: blur(8px);
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 20px 20px 0;
 }
 
 /* Links inside the dropdown */
