@@ -12,15 +12,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">
+        <div onclick="myFunction()" class="dropbtn rellax" data-rellax-speed="7" id="">
             <!-- <img src="hamburger_01.svg" class="clipKhan"> -->
-        </button>
+            <div class="dropdown blink" id="mainmenu" style="left:80px; font-size: 20px;">
+                <i class="fas fa-arrow-left"></i>
+                <!-- <p style="font-size: 10px">Click here</p> -->
+            </div>
+        </div>
         <div id="myDropdown" class="dropdown-content" style="font-family: 'Kanit', sans-serif;">
             <a href="#">ที่มาและความสำคัญ</a>
             <a href="#">รายละเอียด</a>
@@ -29,6 +34,8 @@
             <a href="#">หน่วยงานที่เกี่ยวข้อง</a>
         </div>
     </div>
+
+
 
     <!-- Bubbles -->
     <div class="box6" id="bubbles_1">
@@ -99,20 +106,35 @@
             setTimeout(() => {
                 goBubbles();
                 state += 550;
-                console.log(state);
+                // console.log(state);
             }, 500);
         }
     }, state);
+    setTimeout(() => {
+        setBlinking();
+    }, 4000);
+
+    function setRotating() {
+        let r = window.pageYOffset / 2;
+        mainmenu.style.transform = `rotate(${r}deg)`;
+    }
+    window.addEventListener("scroll", setRotating);
 
     function goBubbles() {
         let i = 0;
         var spans = document.createElement("SPAN");
         var rand = Math.floor((Math.random() * 6));
-        console.log(rand);
+        // console.log(rand);
         spans.classList.add('bubble')
         document.querySelectorAll('.bubble')[i].style.bottom = rand + `em`;
         document.getElementById('bubbles_1').appendChild(spans);
         i++;
+    }
+
+    function setBlinking() {
+        mainmenu.classList.remove("blink");
+        mainmenu.style.display = "none";
+
     }
 
     function myFunction() {
