@@ -92,7 +92,7 @@ img {
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover {
-    transform: scale(1.25) !important;
+    transform: scale(1.15) !important;
     transition: all .5s;
 }
 
@@ -123,6 +123,8 @@ img {
     margin: 10px 20px 20px 20px;
     color: white;
     border-left: 2px dashed;
+    backdrop-filter: blur(8px);
+    border-radius: 0px 20px 20px 0px;
 }
 
 /* Links inside the dropdown */
@@ -133,12 +135,14 @@ img {
     display: block;
     transition: all .5s;
     font-size: 2vh;
+    /* border-radius: 30px; */
     /* border-left: 2px dashed; */
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd
+    color: #01379c;
+    background-color: rgb(255, 255, 255)
 }
 
 @media only screen and (max-width: 1440px) {
@@ -195,10 +199,11 @@ img {
 
 .letter4 {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 10%;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(255, 186, 59);
+    font-family: 'Kanit', sans-serif !important;
 }
 
 .letter5 {
@@ -498,7 +503,7 @@ img {
     .box1 {
         height: 300px;
         width: 300px;
-        top: 15%;
+        top: 20%;
         right: 0%;
         left: auto;
     }
@@ -643,7 +648,7 @@ img {
     .box1 {
         height: 300px;
         width: 300px;
-        top: 10%;
+        top: 20%;
         right: 0%;
         left: auto;
     }
