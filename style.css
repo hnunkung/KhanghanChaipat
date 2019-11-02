@@ -1,5 +1,4 @@
 /* Css */
-
 html {
     margin: 0;
     padding: 0;
@@ -27,13 +26,14 @@ body {
     user-select: none;
 }
 
-p {
+/* p {
     font-family: 'Kanit', sans-serif;
-}
+} */
 
 img {
     min-width: 100%
 }
+
 
 .clipKhan {
     position: fixed;
@@ -43,6 +43,7 @@ img {
     display: block;
 }
 
+/* Blink */
 @-webkit-keyframes blinker {
     from {
         opacity: 1.0;
@@ -78,7 +79,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     top: 5%;
-    left: 5%;
+    right: 8%;
     position: fixed;
     margin: 20px;
     z-index: 1;
@@ -113,9 +114,9 @@ img {
     z-index: 100;
     transition: all .5s;
     top: 15%;
-    left: 5%;
+    right: 0%;
     position: fixed;
-    margin: 10px 20px 20px 20px;
+    margin: 5px 20px 20px 20px;
     color: white;
     border-left: 2px dashed;
     backdrop-filter: blur(8px);
@@ -125,7 +126,7 @@ img {
 /* Links inside the dropdown */
 .dropdown-content a {
     color: rgb(255, 255, 255);
-    padding: 12px 16px;
+    padding: 8px 16px;
     text-decoration: none;
     display: block;
     transition: all .5s;
@@ -146,11 +147,16 @@ img {
     opacity: 1;
 }
 
+#arrowOut {
+    left: 80px;
+    font-size: 20px;
+}
+
 /* Preset สำหรับทำกรอบของข้อความ */
 .letter1 {
     position: absolute;
     top: 70%;
-    left: 10%;
+    left: 60%;
     font-size: 70px;
     letter-spacing: 8px;
 
@@ -166,7 +172,7 @@ img {
 .letter3 {
     position: absolute;
     top: 80%;
-    left: 10%;
+    left: 60%;
     font-size: 70px;
     letter-spacing: 8px;
 }
@@ -174,9 +180,9 @@ img {
 .letter4 {
     position: absolute;
     top: 55%;
-    left: 10%;
+    left: 60%;
     font-size: 15px;
-    color: rgb(255, 186, 59);
+    color: #EA6B53;
     font-family: 'Kanit', sans-serif !important;
 }
 
@@ -238,18 +244,18 @@ img {
 /*Object Placeholder*/
 .box1 {
     /* background: rgb(10, 10, 56); */
-    height: 700px;
-    width: 700px;
+    height: 750px;
+    width: 800px;
     /* background: red; */
     position: absolute;
     top: 5%;
-    right: 0%;
-    left: auto;
-    filter: invert(1);
+    left: 0%;
+    right: auto;
+    filter: invert(0);
 
-    background-image: url(กังหัน-FIRSTPAGE_2.svg);
+    background-image: url(GangHan1.svg);
     background-size: cover;
-    background-position: left;
+    background-position: right;
     background-repeat: no-repeat;
 
     /* transform: rotate(45deg) */
@@ -299,8 +305,8 @@ img {
     width: 5em;
     position: absolute;
     top: 18%;
-    right: 30%;
-    transform: scaleX(-1);
+    left: 30%;
+    /* transform: scaleX(-1); */
     /* transform: rotate(30deg); */
 }
 
@@ -411,20 +417,20 @@ img {
 /* แบ่งตามขนาด width ของ Windows ทำงานคล้าย if */
 @media only screen and (max-width: 1440px) {
     .dropbtn {
-        left: 8%;
+        right: 8%;
     }
 
     .dropdown-content {
-        left: 8%;
+        right: 2%;
     }
 
 }
 
 @media only screen and (max-width: 1366px) {
     .box1 {
-        width: 60%;
-        top: 0%;
-        right: 0%;
+        width: 65%;
+        top: 5%;
+        left: 0%;
         left: auto;
     }
 
@@ -432,7 +438,102 @@ img {
     .letter1 {
         position: absolute;
         top: 78%;
-        left: 7%;
+        right: 7%;
+        font-size: 50px;
+        letter-spacing: 5px;
+
+    }
+
+    .letter2 {
+        position: absolute;
+        top: 0%;
+        right: 10%;
+        font-size: 50px;
+    }
+
+    .letter3 {
+        position: absolute;
+        top: 85%;
+        right: 7%;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+
+    .letter4 {
+        position: absolute;
+        top: 65%;
+        right: 7%;
+        font-size: 15px;
+        color: rgb(214, 104, 1);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .box1 {
+        height: 750px;
+        width: 750px;
+        top: 10%;
+        left: 0%;
+        right: auto;
+    }
+
+
+    .letter1 {
+        position: absolute;
+        top: 76%;
+        right: 2%;
+        font-size: 45px;
+        letter-spacing: 5px;
+
+    }
+
+    .letter2 {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        font-size: 45px;
+    }
+
+    .letter3 {
+        position: absolute;
+        top: 83%;
+        right: 2%;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+
+    .letter4 {
+        position: absolute;
+        top: 62%;
+        right: 7%;
+        font-size: 15px;
+        color: rgb(214, 104, 1);
+    }
+
+    .dropbtn {
+        right: 10%;
+    }
+
+    .dropdown-content {
+        right: 0%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .box1 {
+        height: 300px;
+        width: 300px;
+        top: 20%;
+        left: 0%;
+        right: auto;
+    }
+
+
+    .letter1 {
+        position: absolute;
+        top: 78%;
+        left: 10%;
         font-size: 50px;
         letter-spacing: 5px;
 
@@ -448,7 +549,7 @@ img {
     .letter3 {
         position: absolute;
         top: 85%;
-        left: 7%;
+        left: 10%;
         font-size: 50px;
         letter-spacing: 5px;
     }
@@ -456,65 +557,112 @@ img {
     .letter4 {
         position: absolute;
         top: 65%;
-        left: 7%;
-        font-size: 10px;
-        color: rgb(214, 104, 1);
-    }
-}
-
-/*ของ dropbtn*/
-@media only screen and (max-width: 1024px) {
-    .box1 {
-        height: 750px;
-        width: 750px;
-        top: 10%;
-        right: 0%;
-        left: auto;
-    }
-
-
-    .letter1 {
-        position: absolute;
-        top: 76%;
-        left: 7%;
-        font-size: 70px;
-        letter-spacing: 5px;
-
-    }
-
-    .letter2 {
-        position: absolute;
-        top: 0%;
         left: 10%;
-        font-size: 50px;
-    }
-
-    .letter3 {
-        position: absolute;
-        top: 86%;
-        left: 7%;
-        font-size: 70px;
-        letter-spacing: 5px;
-    }
-
-    .letter4 {
-        position: absolute;
-        top: 62%;
-        left: 7%;
         font-size: 15px;
-        color: rgb(214, 104, 1);
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .dropbtn {
-        left: 5%;
+        color: rgb(255, 145, 42);
     }
 
-    .dropdown-content {
-        left: 5%;
+    /* bubble */
+
+    .bubble,
+    .bubble::before,
+    .bubble::after {
+        content: '';
+        position: absolute;
+        width: .5em;
+        height: .5em;
+        background-color: #01379c88;
+        right: 0em;
+        bottom: 0em;
+        border-radius: 50%;
+        stroke: black;
+        box-shadow: 0 0 0 2px
     }
 
+    .bubble {
+        animation:
+            drift 2s infinite,
+            bubble-1 2s infinite;
+        animation:
+            drift 2s infinite,
+            bubble-3 2s infinite;
+        animation:
+            drift 0.5s infinite,
+            bubble-4 2s infinite;
+    }
+
+    .bubble::before {
+        animation:
+            drift 3s infinite,
+            bubble-2 3s infinite;
+        animation:
+            drift 2s infinite,
+            bubble-1 1s infinite;
+    }
+
+    .bubble::after {
+        animation:
+            drift 5s infinite,
+            bubble-3 4s infinite;
+        animation:
+            drift 2s infinite,
+            bubble-1 2s infinite;
+        animation:
+            drift 3s infinite,
+            bubble-2 0.25s infinite;
+        animation:
+            drift 0.5s infinite,
+            bubble-4 2s infinite;
+    }
+
+    @keyframes drift {
+
+        0%,
+        100% {
+            filter: opacity(1);
+        }
+
+        15% {
+            filter: opacity(1);
+        }
+    }
+
+    @keyframes bubble-1 {
+        to {
+            width: 1em;
+            height: 1em;
+            right: -em;
+            bottom: 8em;
+        }
+    }
+
+    @keyframes bubble-2 {
+        to {
+            width: 2.5em;
+            height: 2.5em;
+            right: -6em;
+            bottom: 5em;
+        }
+    }
+
+    @keyframes bubble-3 {
+        to {
+            width: 1em;
+            height: 1em;
+            right: -4em;
+            bottom: 1em;
+        }
+
+    }
+
+    @keyframes bubble-4 {
+        to {
+            width: 2em;
+            height: 2em;
+            right: -5em;
+            bottom: 7em;
+        }
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -522,8 +670,8 @@ img {
         height: 300px;
         width: 300px;
         top: 20%;
-        right: 0%;
-        left: auto;
+        left: 0%;
+        right: auto;
     }
 
 
@@ -667,23 +815,23 @@ img {
         height: 300px;
         width: 300px;
         top: 20%;
-        right: 0%;
-        left: auto;
+        left: 0%;
+        right: auto;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .dropbtn {
-        width: 37.5px;
-        height: 20px;
+        width: 56.25px;
+        height: 30px;
     }
 
     .box1 {
         height: 300px;
         width: 300px;
         top: 10%;
-        right: 0%;
-        left: auto;
+        left: 0%;
+        right: auto;
     }
 
     .box4 {
@@ -721,5 +869,10 @@ img {
         left: 10%;
         font-size: 12px;
         color: rgb(252, 149, 53);
+    }
+
+    #arrowOut {
+        left: 55px;
+        font-size: 13px;
     }
 }

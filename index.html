@@ -7,21 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Khanghannaam</title>
+    <title>Chaipattana Water Turbine</title>
     <link href="https://fonts.googleapis.com/css?family=Chonburi|Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/images/water-drop.png" />
 
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="dropdown">
-        <div onclick="myFunction()" class="dropbtn rellax" data-rellax-speed="7" id="">
+        <div onclick="myFunction()" class="dropbtn rellax" data-rellax-speed="3" id="">
             <!-- <img src="hamburger_01.svg" class="clipKhan"> -->
-            <div class="dropdown blink" id="mainmenu" style="left:80px; font-size: 20px;">
+            <div class="dropdown blink" id="arrowOut">
                 <i class="fas fa-arrow-left"></i>
                 <!-- <p style="font-size: 10px">Click here</p> -->
             </div>
@@ -116,7 +117,7 @@
 
     function setRotating() {
         let r = window.pageYOffset / 2;
-        mainmenu.style.transform = `rotate(${r}deg)`;
+        arrowOut.style.transform = `rotate(${r}deg)`;
     }
     window.addEventListener("scroll", setRotating);
 
@@ -132,8 +133,8 @@
     }
 
     function setBlinking() {
-        mainmenu.classList.remove("blink");
-        mainmenu.style.display = "none";
+        arrowOut.classList.remove("blink");
+        arrowOut.style.display = "none";
 
     }
 
