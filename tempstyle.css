@@ -1,9 +1,17 @@
 /* Css */
+
+* {
+    /* overflow-x: hidden; */
+}
+
 html {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 
 body {
     margin: 0;
@@ -26,14 +34,37 @@ body {
     user-select: none;
 }
 
-/* p {
-    font-family: 'Kanit', sans-serif;
-} */
+p {
+    margin-top: 0rem;
+    margin-bottom: -7rem;
+}
 
 img {
     min-width: 100%
 }
 
+#div1 {
+    overflow-x: hidden;
+}
+
+.contained {
+    display: inline;
+}
+
+.containing {
+    position: relative;
+    height: 800px;
+}
+
+.font-area {
+    /* display: flex; */
+}
+
+.place-area {
+    /* display: flex; */
+    background: white;
+    height: 800px;
+}
 
 .clipKhan {
     position: fixed;
@@ -155,12 +186,15 @@ img {
 /* Preset สำหรับทำกรอบของข้อความ */
 .letter1 {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 20em;
-    font-size: 220px;
-    letter-spacing: 8px;
+    /* max-width: 200px; */
+    font-size: 15.55vw;
     color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-overflow: clip;
+    /* border: 1px solid #000000; */
     -webkit-text-stroke: 1.5px white;
 
 }
@@ -182,9 +216,9 @@ img {
 
 .letter4 {
     position: absolute;
-    top: 55%;
-    left: 60%;
-    font-size: 15px;
+    top: 130px;
+    left: 65%;
+    font-size: 25px;
     color: rgb(255, 145, 42);
     font-family: 'Kanit', sans-serif !important;
 }
@@ -414,6 +448,18 @@ img {
 
 .font-chonburi {
     font-family: 'Chonburi', sans-serif !important;
+}
+
+.font-letting-0 {
+    letter-spacing: 2px;
+}
+
+.font-letting-1 {
+    letter-spacing: 4px;
+}
+
+.font-letting-2 {
+    letter-spacing: 8px;
 }
 
 /*Manual Responsive Check window size*/
