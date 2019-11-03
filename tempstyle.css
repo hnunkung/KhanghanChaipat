@@ -40,7 +40,7 @@ p {
 }
 
 img {
-    min-width: 100%
+    min-width: 50%
 }
 
 #div1 {
@@ -225,8 +225,11 @@ img {
 
 .letter5 {
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: -50px;
+    left: 15%;
+    font-size: 20px;
+    color: #01379c;
+    font-family: 'Kanit', sans-serif !important;
 }
 
 .letter6 {
