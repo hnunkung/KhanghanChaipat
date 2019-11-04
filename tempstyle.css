@@ -53,7 +53,14 @@ img {
 
 .containing {
     position: relative;
-    height: 800px;
+    height: 850px;
+}
+
+.curving_posture {
+    right: 0;
+    min-width: 30%;
+    left: auto;
+    position: absolute;
 }
 
 .font-area {
@@ -72,6 +79,10 @@ img {
     width: 20px;
     height: 20px;
     display: block;
+}
+
+.margin-push-paragraph {
+    margin-left: -.25em;
 }
 
 /* Blink */
@@ -187,7 +198,7 @@ img {
 .letter1 {
     position: absolute;
     /* max-width: 200px; */
-    font-size: 15.55vw;
+    font-size: 1120%;
     color: rgba(0, 0, 0, 0);
     white-space: nowrap;
     width: 100%;
@@ -216,7 +227,7 @@ img {
 
 .letter4 {
     position: absolute;
-    top: 130px;
+    top: 80px;
     left: 65%;
     font-size: 25px;
     color: rgb(255, 145, 42);
@@ -481,7 +492,7 @@ img {
 @media only screen and (max-width: 1366px) {}
 
 /*ของ dropbtn*/
-@media only screen and (max-width: 1024px) {}
+
 
 @media only screen and (max-width: 1024px) {
     .dropbtn {
@@ -494,7 +505,96 @@ img {
 
 }
 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 768px) {
+    .curving_posture {
+        right: 0;
+        width: 98%;
+        left: auto;
+        position: absolute;
+    }
+
+    .letter1 {
+        /* position: absolute; */
+        /* max-width: 200px; */
+        font-size: 750%;
+        white-space: nowrap;
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+        text-overflow: clip;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap column;
+        align-items: flex-start;
+
+    }
+
+    .letter4 {
+        position: absolute;
+        top: 680px;
+        left: 70%;
+        font-size: 15px;
+    }
+
+    .letter5 {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        font-size: 20px;
+        color: #01379c;
+        font-family: 'Kanit', sans-serif !important;
+    }
+
+    .unusual-flex {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-flow: wrap row;
+        align-items: flex-start;
+    }
+
+    .margin-push-paragraph-backward {
+        margin-left: 1.5em;
+        margin-top: -100px;
+    }
+
+    .margin-push-paragraph-forward {
+        margin-left: -1em !important;
+        margin-top: -50px;
+    }
+
+    .margin-push-paragraph-forward-05 {
+        margin-left: -.5em !important;
+        margin-top: -50px;
+    }
+
+    .margin-push-paragraph-forward-25 {
+        margin-left: -.25em !important;
+
+    }
+
+    .margin-push-paragraph-up-50 {
+        margin-top: -50px;
+    }
+
+    .margin-push-paragraph-up-100 {
+        margin-top: -100px;
+    }
+
+    .margin-push-paragraph-up-150 {
+        margin-top: -150px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .containing {
+        height: 985px;
+    }
+
+    .letter1 {
+        font-size: 700%;
+        height: 900px;
+    }
+}
 
 @media only screen and (max-width: 375px) {}
 
