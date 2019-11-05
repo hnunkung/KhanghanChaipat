@@ -510,6 +510,7 @@ img {
 
 }
 
+/* iPhone 678 */
 @media only screen and (max-width: 1000px) {
     .curving_posture {
         right: 0;
