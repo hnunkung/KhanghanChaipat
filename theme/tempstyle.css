@@ -1,7 +1,6 @@
 /* Css */
 
-* {
-}
+* {}
 
 html {
     margin: 0;
@@ -116,7 +115,7 @@ img {
     cursor: pointer;
     width: 75px;
     height: 40px;
-    background-image: url('hamburger_01.svg');
+    background-image: url('../hamburger_01.svg');
     background-size: cover;
     background-repeat: no-repeat;
     top: 5%;
@@ -308,7 +307,7 @@ img {
     right: auto;
     filter: invert(0);
 
-    background-image: url(GangHan1.svg);
+    background-image: url(../GangHan1.svg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
