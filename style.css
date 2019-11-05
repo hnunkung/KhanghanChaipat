@@ -107,6 +107,7 @@ img {
 .dropdown-content {
     display: block;
     opacity: 0;
+    visibility: hidden;
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
     min-width: 160px;
@@ -144,6 +145,7 @@ img {
 .show {
     display: block;
     transition: all .5s;
+    visibility: visible;
     opacity: 1;
 }
 

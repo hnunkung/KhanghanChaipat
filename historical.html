@@ -17,6 +17,25 @@
 </head>
 
 <body>
+
+    <!-- Navbar -->
+    <div class="dropdown">
+        <div onclick="myFunction()" class="dropbtn">
+            <!-- <img src="hamburger_01.svg" class="clipKhan"> -->
+            <div class="dropdown blink" id="arrowOut">
+                <i class="fas fa-arrow-left"></i>
+                <!-- <p style="font-size: 10px">Click here</p> -->
+            </div>
+        </div>
+        <div id="myDropdown" class="dropdown-content" style="font-family: 'Kanit', sans-serif;">
+            <a href="index.html" style="font-size: 20px;">กลับสู่หน้าหลัก</a>
+            <a href="#">รายละเอียด</a>
+            <a href="#">ขั้นตอนการทำงาน</a>
+            <a href="#">ผลลัพธ์จากการใช้งาน</a>
+            <a href="#">หน่วยงานที่เกี่ยวข้อง</a>
+        </div>
+    </div>
+
     <div class="contained">
         <div class="letter4 font-size-xs">
             <p style="font-family: 'Kanit', sans-serif;" class="font-letting-0">
@@ -55,6 +74,13 @@
                     โครงการ <br>
                 </p>
             </div>
+            <div class="letter6 font-size-xs">
+                <p style="font-family: 'Kanit', sans-serif;" class="rellax font-letting-0 display-4 font-weight-bold "
+                    data-rellax-speed="">
+                    aaaaa<br>
+                    aaaaa <br>
+                </p>
+            </div>
             <div class="place-area">
                 <figure>
                     <div>
@@ -71,6 +97,62 @@
 
 <script type="text/javascript">
     var rellax = new Rellax('.rellax');
+</script>
+
+<!-- Prevent touchmove -->
+<script type="text/javascript">
+    function preventDefault(e) {
+        e.preventDefault();
+    }
+
+    function disableScroll() {
+        document.body.addEventListener('touchmove', preventDefault, {
+            passive: false
+        });
+    }
+
+    function enableScroll() {
+        document.body.removeEventListener('touchmove', preventDefault);
+    }
+</script>
+
+<script type="text/javascript">
+    function setBlinking() {
+        arrowOut.classList.remove("blink");
+        arrowOut.style.display = "none";
+
+    }
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        setBlinking();
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Script from Bt4 -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
 
 </html>
