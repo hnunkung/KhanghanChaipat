@@ -1,6 +1,8 @@
 /* Css */
-
-* {}
+:root {
+    --main-bg-color: #F9B9AC;
+    --main-blue-color: #01379c;
+}
 
 html {
     margin: 0;
@@ -13,7 +15,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #F9B9AC;
+    background-color: var(--main-bg-color);
     /*background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
     font-family: "Ailerons";
     /* color: rgb(255, 255, 255); */
@@ -66,8 +68,9 @@ img {
 
 .place-area {
     /* display: flex; */
-    background: white;
+    background: var(--main-bg-color);
     height: 1000px;
+    margin-top: 2em;
 }
 
 .clipKhan {
@@ -127,7 +130,6 @@ img {
     margin: 20px;
     z-index: 1;
     transition: all .5s;
-    filter: invert(1);
 }
 
 /* Dropdown button on hover & focus */
@@ -193,6 +195,30 @@ img {
     visibility: visible;
 }
 
+.hierachy-container {
+    display: block;
+    margin-top: 4em;
+    width: 80vw;
+    height: 500px;
+}
+
+.hierachy-container-2 {
+    padding: 33vw 1.5em 0 1em;
+}
+
+.hierachy-font {
+    padding-left: 1.5em;
+}
+
+.hierachy-quality {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.col-sm {
+    padding-left: 35px !important;
+}
+
 #arrowOut {
     left: 80px;
     font-size: 20px;
@@ -234,7 +260,7 @@ img {
     top: 420px;
     left: 40%;
     font-size: 25px;
-    color: #01379c;
+    color: var(--main-blue-color);
     font-weight: 900;
     font-family: 'Kanit', sans-serif !important;
 }
@@ -242,10 +268,11 @@ img {
 .letter5 {
     position: absolute;
     top: 40px;
-    left: 15%;
+    left: 10%;
     font-size: 20px;
-    color: #F9B9AC;
-    font-family: 'Kanit', sans-serif !important;
+    font-weight: 900;
+    color: white;
+    font-family: 'prompt', sans-serif !important;
 }
 
 .letter6 {
@@ -253,7 +280,7 @@ img {
     top: 100px;
     left: 15%;
     font-size: 20px;
-    color: #F9B9AC;
+    color: white;
     font-family: 'Kanit', sans-serif !important;
 }
 
@@ -472,8 +499,12 @@ img {
     font-family: 'Chonburi', sans-serif !important;
 }
 
+.font-prompt {
+    font-family: 'Prompt', sans-serif !important;
+}
+
 .font-letting-0 {
-    letter-spacing: 2px;
+    letter-spacing: .5px;
 }
 
 .font-letting-1 {
@@ -482,6 +513,16 @@ img {
 
 .font-letting-2 {
     letter-spacing: 8px;
+}
+
+.font-color-blue {
+    color: var(--main-blue-color);
+}
+
+.font-bolder {
+    /* text-shadow: 2px 0 var(--main-blue-color); */
+    letter-spacing: 3px;
+    font-weight: 900;
 }
 
 /*Manual Responsive Check window size*/
@@ -526,6 +567,10 @@ img {
         position: absolute;
     }
 
+    .hierachy-container-2 {
+        padding: 15em 0 0 0;
+    }
+
     .letter1 {
         /* position: absolute; */
         /* max-width: 200px; */
@@ -550,9 +595,7 @@ img {
     .letter5 {
         position: absolute;
         top: 5%;
-        left: 15%;
-        font-size: 10px;
-        font-family: 'Kanit', sans-serif !important;
+        left: 10%;
     }
 
     .letter6 {
@@ -561,6 +604,11 @@ img {
         left: 15%;
         font-size: 20px;
         font-family: 'Kanit', sans-serif !important;
+    }
+
+    .hierachy-quality {
+        font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .unusual-flex {
@@ -573,6 +621,11 @@ img {
     .margin-push-paragraph-backward {
         margin-left: 1em;
         margin-top: -100px;
+    }
+
+    .margin-push-paragraph-forward-105 {
+        margin-left: -1.5em !important;
+        margin-top: -50px;
     }
 
     .margin-push-paragraph-forward {
@@ -607,13 +660,26 @@ img {
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
     .containing {
         height: 500px;
     }
 
     .place-area {
-        height: 1000px;
+        height: 750px;
+        background-image: url(../Assets/images/hierachy_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 2em;
+        background-color: white;
+    }
+
+    .padding-top-1 {
+        padding-top: 1em;
+    }
+
+    .padding-bottom-1 {
+        padding-bottom: 1em;
     }
 
     .letter1 {
@@ -633,9 +699,6 @@ img {
         position: absolute;
         top: 30px;
         left: 10%;
-        font-size: 5px;
-        color: #F9B9AC;
-        font-family: 'Kanit', sans-serif !important;
     }
 
     .letter6 {
@@ -645,6 +708,85 @@ img {
         font-size: 20px;
         color: #F9B9AC;
         font-family: 'Kanit', sans-serif !important;
+    }
+
+    .hierachy-quality {
+        font-size: 1.25rem;
+        line-height: 1.2;
+        display: none;
+    }
+
+    .hierachy-container {
+        display: none;
+    }
+
+    .hierachy-container-2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .containing {
+        height: 500px;
+    }
+
+    .place-area {
+        height: 450px;
+        background-image: url(../Assets/images/hierachy_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 2em;
+        background-color: white;
+    }
+
+    .padding-top-1 {
+        padding-top: 1em;
+    }
+
+    .padding-bottom-1 {
+        padding-bottom: 1em;
+    }
+
+    .letter1 {
+        font-size: 600%;
+        height: 900px;
+    }
+
+    .letter4 {
+        position: absolute;
+        top: 350px;
+        left: 10%;
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .letter5 {
+        position: absolute;
+        top: 30px;
+        left: 10%;
+    }
+
+    .letter6 {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        font-size: 20px;
+        color: #F9B9AC;
+        font-family: 'Kanit', sans-serif !important;
+    }
+
+    .hierachy-quality {
+        font-size: 1.25rem;
+        line-height: 1.2;
+        display: none;
+    }
+
+    .hierachy-container {
+        display: none;
+    }
+
+    .hierachy-container-2 {
+        display: none;
     }
 }
 
