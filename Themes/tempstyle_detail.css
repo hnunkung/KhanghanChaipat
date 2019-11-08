@@ -619,7 +619,7 @@ img {
     }
 
     .margin-push-paragraph-backward {
-        margin-left: 1em;
+        margin-left: 2em;
         margin-top: -100px;
     }
 
@@ -641,6 +641,10 @@ img {
     .margin-push-paragraph-forward-25 {
         margin-left: -.25em !important;
 
+    }
+
+    .margin-push-paragraph-up-10 {
+        margin-top: -10px;
     }
 
     .margin-push-paragraph-up-50 {
