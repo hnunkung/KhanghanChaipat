@@ -587,9 +587,9 @@ img {
 
     .letter4 {
         position: absolute;
-        top: 450px;
-        left: 5%;
-        font-size: 15px;
+        top: 650px;
+        left: 8%;
+        font-size: 20px;
     }
 
     .letter5 {
@@ -620,7 +620,7 @@ img {
 
     .margin-push-paragraph-backward {
         margin-left: 2em;
-        margin-top: -100px;
+        margin-top: -50px;
     }
 
     .margin-push-paragraph-forward-105 {
