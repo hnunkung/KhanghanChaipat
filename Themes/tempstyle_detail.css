@@ -557,7 +557,7 @@ img {
 /* iPhone 678 */
 @media only screen and (max-width: 768px) {
     .containing {
-        height: 700px;
+        height: 850px;
     }
 
     .curving_posture {
@@ -659,14 +659,26 @@ img {
         margin-top: -150px;
     }
 
+    .margin-push-paragraph-down-15 {
+        margin-top: 15px;
+    }
+
+    .margin-push-paragraph-down-25 {
+        margin-top: 25px;
+    }
+
     .margin-push-paragraph-down-50 {
         margin-top: 50px;
+    }
+
+    .margin-push-paragraph-down-50 {
+        margin-top: 100px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .containing {
-        height: 500px;
+        height: 750px;
     }
 
     .place-area {
@@ -693,10 +705,10 @@ img {
 
     .letter4 {
         position: absolute;
-        top: 350px;
+        top: 500px;
         left: 10%;
-        width: 80px;
-        font-size: 10px;
+        width: 9100px;
+        font-size: 20px;
     }
 
     .letter5 {
@@ -731,7 +743,7 @@ img {
 
 @media only screen and (max-width: 414px) {
     .containing {
-        height: 500px;
+        height: 650px;
     }
 
     .place-area {
@@ -758,10 +770,10 @@ img {
 
     .letter4 {
         position: absolute;
-        top: 350px;
+        top: 450px;
         left: 10%;
-        width: 80px;
-        font-size: 10px;
+        width: 95px;
+        font-size: 15px;
     }
 
     .letter5 {
@@ -791,6 +803,11 @@ img {
 
     .hierachy-container-2 {
         display: none;
+    }
+
+    .margin-push-paragraph-backward {
+        margin-left: 1em;
+        margin-top: -50px;
     }
 }
 
