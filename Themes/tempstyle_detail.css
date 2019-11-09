@@ -39,7 +39,7 @@ p {
 }
 
 img {
-    min-width: 50%
+    /* min-width: 50% */
 }
 
 #div1 {
@@ -198,7 +198,7 @@ img {
 
 .hierachy-container {
     display: block;
-    margin-top: 4em;
+    margin-top: 7em;
     width: 80vw;
     height: 500px;
 }
@@ -278,11 +278,12 @@ img {
 
 .letter6 {
     position: absolute;
-    top: 100px;
+    top: 18vw;
     left: 15%;
     font-size: 20px;
+    font-weight: 900;
     color: white;
-    font-family: 'Kanit', sans-serif !important;
+    font-family: 'prompt', sans-serif !important;
 }
 
 .letter7 {
@@ -397,6 +398,23 @@ img {
     /* transform: rotate(30deg); */
 }
 
+#imgcer1 {
+    width: 230px;
+    right: 28.5em;
+    top: 3.25em;
+    position: absolute;
+
+}
+
+#imgcer2 {
+    width: 480px;
+    right: 16em;
+    top: 20em;
+    position: absolute;
+
+}
+
+
 
 /* Animation ทำ bubble */
 /* set Keyframe ไว้อันนึง */
@@ -492,6 +510,22 @@ img {
 }
 
 /* font */
+.font-size-xs {
+    font-size: .5em;
+}
+
+.font-size-s {
+    font-size: 1em;
+}
+
+.font-size-m {
+    font-size: 1.5em;
+}
+
+.font-size-l {
+    font-size: 2em;
+}
+
 .font-kanit {
     font-family: 'Kanit', sans-serif !important;
 }
@@ -518,6 +552,10 @@ img {
 
 .font-color-blue {
     color: var(--main-blue-color);
+}
+
+.font-color-white {
+    color: white;
 }
 
 .font-bolder {
@@ -572,6 +610,24 @@ img {
         padding: 15em 0 0 0;
     }
 
+    #imgcer1 {
+        width: 100%;
+        right: 0;
+        top: 0;
+        margin-top: 2em;
+        padding: 20px;
+
+    }
+
+    #imgcer2 {
+        width: 100%;
+        right: 0;
+        top: 35em;
+        margin-top: 2em;
+        padding: 15px;
+
+    }
+
     .letter1 {
         /* position: absolute; */
         /* max-width: 200px; */
@@ -601,10 +657,8 @@ img {
 
     .letter6 {
         position: absolute;
-        top: 15%;
-        left: 15%;
-        font-size: 20px;
-        font-family: 'Kanit', sans-serif !important;
+        top: 100em;
+        left: 10%;
     }
 
     .hierachy-quality {
@@ -672,7 +726,7 @@ img {
         margin-top: 50px;
     }
 
-    .margin-push-paragraph-down-50 {
+    .margin-push-paragraph-down-100 {
         margin-top: 100px;
     }
 }
@@ -680,6 +734,10 @@ img {
 @media only screen and (max-width: 600px) {
     .containing {
         height: 750px;
+    }
+
+    .img-cer1 {
+        width: 100%;
     }
 
     .place-area {
@@ -720,11 +778,8 @@ img {
 
     .letter6 {
         position: absolute;
-        top: 50%;
-        left: 15%;
-        font-size: 20px;
-        color: #F9B9AC;
-        font-family: 'Kanit', sans-serif !important;
+        top: 60em;
+        left: 10%;
     }
 
     .hierachy-quality {
@@ -785,11 +840,8 @@ img {
 
     .letter6 {
         position: absolute;
-        top: 50%;
-        left: 15%;
-        font-size: 20px;
-        color: #F9B9AC;
-        font-family: 'Kanit', sans-serif !important;
+        top: 30px;
+        left: 10%;
     }
 
     .hierachy-quality {
