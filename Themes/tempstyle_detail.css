@@ -55,6 +55,11 @@ img {
     height: 750px;
 }
 
+.containing-2 {
+    position: relative;
+    height: 750px;
+}
+
 .curving_posture {
     right: 0;
     min-width: 30%;
@@ -156,7 +161,7 @@ img {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
     z-index: 100;
@@ -164,17 +169,17 @@ img {
     top: 15%;
     right: 5%;
     position: fixed;
-    margin: 10px 20px 20px 20px;
-    color: white;
+    margin: 3px 20px 2px 20px;
+    color: var(--main-blue-color);
     border-left: 2px dashed;
-    backdrop-filter: blur(8px);
-    border-radius: 0 20px 20px 0;
+    backdrop-filter: blur(1px);
+    /* border-radius: 0 20px 20px 0; */
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 12px 16px;
+    color: var(--main-blue-color);
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
     transition: all .5s;
@@ -219,6 +224,8 @@ img {
 .col-sm {
     padding-left: 35px !important;
 }
+
+
 
 #arrowOut {
     left: 80px;
@@ -414,6 +421,18 @@ img {
 
 }
 
+.ganghan2 {
+    top: 15em;
+    right: 1px;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    background-image: url(../Assets/images/GangHan2.svg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
 
 
 /* Animation ทำ bubble */
@@ -564,6 +583,10 @@ img {
     font-weight: 900;
 }
 
+.font-bold {
+    font-weight: 600;
+}
+
 /*Manual Responsive Check window size*/
 /* แบ่งตามขนาด width ของ Windows ทำงานคล้าย if */
 @media only screen and (max-width: 1440px) {
@@ -599,6 +622,10 @@ img {
         height: 850px;
     }
 
+    .containing-2 {
+        height: 1900px;
+    }
+
     .curving_posture {
         right: 0;
         width: 98%;
@@ -622,7 +649,7 @@ img {
     #imgcer2 {
         width: 100%;
         right: 0;
-        top: 35em;
+        top: 50em;
         margin-top: 2em;
         padding: 15px;
 
@@ -657,7 +684,7 @@ img {
 
     .letter6 {
         position: absolute;
-        top: 100em;
+        top: 160em;
         left: 10%;
     }
 
@@ -736,9 +763,28 @@ img {
         height: 750px;
     }
 
-    .img-cer1 {
-        width: 100%;
+    .containing-2 {
+        height: 1400px;
     }
+
+    #imgcer1 {
+        width: 100%;
+        right: 0;
+        top: 0;
+        margin-top: 2em;
+        padding: 20px;
+
+    }
+
+    #imgcer2 {
+        width: 100%;
+        right: 0;
+        top: 34em;
+        margin-top: 2em;
+        padding: 15px;
+
+    }
+
 
     .place-area {
         height: 750px;
@@ -778,7 +824,7 @@ img {
 
     .letter6 {
         position: absolute;
-        top: 60em;
+        top: 110em;
         left: 10%;
     }
 
@@ -795,6 +841,12 @@ img {
     .hierachy-container-2 {
         display: none;
     }
+
+    /* .ganghan2 {
+        width: 200px;
+        height: 200px;
+        background-image: url(../Assets/images/GangHan2.svg);
+    } */
 }
 
 @media only screen and (max-width: 414px) {
@@ -802,14 +854,24 @@ img {
         height: 650px;
     }
 
-    .place-area {
-        height: 450px;
-        background-image: url(../Assets/images/hierachy_2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0 2em;
-        background-color: white;
+    #imgcer1 {
+        width: 100%;
+        right: 0;
+        top: 0;
+        margin-top: 2em;
+        padding: 20px;
+
     }
+
+    #imgcer2 {
+        width: 100%;
+        right: 0;
+        top: 30em;
+        margin-top: 2em;
+        padding: 15px;
+
+    }
+
 
     .padding-top-1 {
         padding-top: 1em;
@@ -840,7 +902,7 @@ img {
 
     .letter6 {
         position: absolute;
-        top: 30px;
+        top: 100em;
         left: 10%;
     }
 
