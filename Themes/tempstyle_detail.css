@@ -602,6 +602,13 @@ img {
 
 @media only screen and (max-width: 1366px) {}
 
+@media only screen and (max-width: 1100px) {
+    body {
+        overflow: hidden;
+        filter: blur(20px);
+    }
+}
+
 /*ของ dropbtn*/
 
 
@@ -618,6 +625,11 @@ img {
 
 /* iPhone 678 */
 @media only screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+        filter: none;
+    }
+
     .containing {
         height: 850px;
     }
@@ -655,6 +667,18 @@ img {
 
     }
 
+    .type-ganghan {
+        top: 1em !important;
+        left: 2em !important;
+    }
+
+    #line-type-ganghan1 {
+        top: 4.5em !important;
+        left: 2.25em !important;
+    }
+
+
+    /* :default */
     .letter1 {
         /* position: absolute; */
         /* max-width: 200px; */
@@ -688,6 +712,8 @@ img {
         left: 10%;
     }
 
+
+    /* additional */
     .hierachy-quality {
         font-size: 2.5rem;
         line-height: 1.2;
