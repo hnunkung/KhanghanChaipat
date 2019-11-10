@@ -616,7 +616,7 @@ img.animated-gif {
     }
 
     .contain-use {
-        margin-left: .5em;
+        margin-left: 1.25em;
     }
 
     .contain-ing {
@@ -759,7 +759,7 @@ img.animated-gif {
     }
 
     .margin-push-paragraph-backward {
-        margin-left: 2em;
+        margin-left: 2.5em;
         margin-top: -50px;
     }
 
@@ -769,7 +769,7 @@ img.animated-gif {
     }
 
     .margin-push-paragraph-backward-04e {
-        margin-left: .4em;
+        margin-left: 1.2em;
         margin-top: -50px;
     }
 
@@ -814,7 +814,7 @@ img.animated-gif {
     }
 
     .margin-push-paragraph-down-05e {
-        margin-top: .5em;
+        margin-top: .75em;
     }
 
     .margin-push-paragraph-down-15 {
@@ -939,6 +939,9 @@ img.animated-gif {
         height: 850px;
     }
 
+    /* .contain-use{
+
+    } */
     .padding-top-1 {
         padding-top: 1em;
     }
@@ -1022,6 +1025,10 @@ img.animated-gif {
 
     .margin-push-paragraph-up-50-2 {
         margin-top: -50px;
+    }
+
+    .margin-push-paragraph-down-05e {
+        margin-top: .75em;
     }
 }
 
