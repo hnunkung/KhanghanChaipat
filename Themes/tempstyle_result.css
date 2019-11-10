@@ -236,13 +236,29 @@ img {
     font-size: 14px;
 }
 
+.para-trophy {
+    margin-top: 2em;
+    margin-left: 7.75em;
+    width: 18em;
+    font-size: 20px;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 15px;
+}
+
 /* trophy */
 .trophy_result {
-    width: 100%;
+    width: 105%;
+    background: white;
+    margin-top: .5em;
+}
+
+.button-carousel {
+    margin-left: 22em;
+    position: absolute;
 }
 
 img.trophy {
-    width: 100%;
+    width: 90%;
 }
 
 /* fish tank */
@@ -578,7 +594,7 @@ img.animated-gif {
     }
 
     .container-4 {
-        height: 800px;
+        height: 880px;
     }
 
     /* additional */
@@ -612,21 +628,36 @@ img.animated-gif {
         font-size: 15px;
     }
 
+    .para-trophy {
+        margin-top: 2em;
+        margin-left: 1.5em;
+        width: 10em;
+        font-size: 20px;
+        border-bottom: 1px dashed grey;
+        padding-bottom: 15px;
+    }
+
     .fish-tank-control {
         margin-top: 9em;
         margin-left: -36em;
     }
 
     img.trophy {
-        width: 90%;
+        width: 80%;
     }
 
     .trophy_result {
         /* margin-top: 10em; */
         position: absolute;
-        margin-bottom: 0px;
+        margin-left: -20px;
+        display: flex;
+        justify-content: center;
+
     }
 
+    .title-trophy {
+        width: 145px;
+    }
 
 
     #line-type-result {
@@ -635,6 +666,11 @@ img.animated-gif {
         position: absolute;
         width: 363px !important;
         height: 172px;
+    }
+
+    .button-carousel {
+        margin-left: 8em;
+        position: absolute;
     }
 
     /* :default */
@@ -809,6 +845,15 @@ img.animated-gif {
         font-size: 15px;
     }
 
+    .para-trophy {
+        margin-top: 2em;
+        margin-left: 1.5em;
+        width: 10em;
+        font-size: 20px;
+        border-bottom: 1px dashed grey;
+        padding-bottom: 15px;
+    }
+
     .fish-tank-control {
         margin-top: 6em;
         margin-left: -20em;
@@ -820,6 +865,12 @@ img.animated-gif {
         position: absolute;
         width: 320px !important;
         height: 252px;
+    }
+
+    .button-carousel {
+        margin-left: 10em;
+        margin-top: -2em;
+        position: absolute;
     }
 
 
@@ -871,7 +922,7 @@ img.animated-gif {
     }
 
     .container-4 {
-        height: 750px;
+        height: 850px;
     }
 
     .padding-top-1 {
@@ -910,6 +961,12 @@ img.animated-gif {
         position: absolute;
         width: 251px !important;
         height: 260px;
+    }
+
+    .button-carousel {
+        margin-left: 9em;
+        margin-top: -2em;
+        position: absolute;
     }
 
 
