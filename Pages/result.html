@@ -3,13 +3,156 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="user-scalable=no, width=500, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi|Kanit|Mitr|Prompt:400,600,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Themes/tempstyle_result.css">
+    <link href="../fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/images/water-drop.png" />
+    <title>Detail</title>
+
 </head>
 
 <body>
-    Result Page was "Under Construction"
+
+    <!-- Navbar -->
+    <div class="dropdown">
+        <div onclick="myFunction()" class="dropbtn">
+            <!-- <img src="hamburger_01.svg" class="clipKhan"> -->
+            <div class="dropdown blink" id="arrowOut">
+                <i class="fas fa-arrow-left"></i>
+                <!-- <p style="font-size: 10px">Click here</p> -->
+            </div>
+        </div>
+        <div id="myDropdown" class="dropdown-content" style="font-family: 'Kanit', sans-serif;">
+            <a href="../index.html" style="font-size: 20px;">กลับสู่หน้าหลัก</a>
+            <a href="historical.html">ที่มาและความสำคัญ</a>
+            <a href="detail.html">รายละเอียด</a>
+            <a href="#">ขั้นตอนการทำงาน</a>
+            <a href="#">หน่วยงานที่เกี่ยวข้อง</a>
+        </div>
+    </div>
+
+    <div class="contained">
+        <div class="letter4">
+            <p style="font-family: 'Kanit', sans-serif;" class="font-letting-0">
+                ผลลัพธ์จาก<br>
+                โครงการ <br>
+                และรางวัลที่ได้
+            </p>
+        </div>
+        <div class="containing">
+            <div class="font-area">
+                <figure>
+                    <div class="letter1 font-chonburi font-letting-1 rellax" data-rellax-speed="2">
+                        <div class="rellax" data-rellax-speed="2">
+                            <p class="unusual-flex contain-re" style="display: flex;">
+                                <span class="margin-push-paragraph-forward-25">ผล</span>
+                                <span class="margin-push-paragraph-up-50-2">ลัพธ์</span>
+                            </p>
+                        </div>
+                        <p style=" display: flex; flex-flow: column;" class="unusual-flex font-alpha-0 contain-from">
+                            <span class="rellax unusual-flex font-alpha-0" data-rellax-speed="1" style="color: white;">
+                                <span
+                                    class="margin-push-paragraph-down-15 margin-push-paragraph-backward font-letting-1">จาก</span>
+                                <span class=" margin-push-paragraph-backward-04e font-alpha-0 contain-ing">การ</span>
+                                <div class=" margin-push-paragraph-down-05e font-alpha-0 contain-use">ใช้งาน</div>
+                            </span>
+                        </p>
+                    </div>
+                </figure>
+            </div>
+        </div>
+        <div class="container-4" style="background-color: white; padding: 3em 10% 0 10%; max-width: 100%; margin: 0;">
+            <div class="row font-prompt font-color-blue" style="width: 100%; height: 400px; margin-top: 1em;">
+                <div class="col-sm-8">
+                    <h1 class="font-bold font-letting-0 title-result">
+                        ผลลัพธ์</h1>
+                    <p class="after-font-size-xs para-result">
+                        กระบวนการของกังหันชัยพัฒนาที่ช่วยทําให้นํ้าใส
+                        สะอาดขึ้น ลดกลิ่นเหม็นลงไปได้มาก และเพิ่มปริมาณ
+                        ออกซิเจนในนํ้าให้เพิ่มขึ้น ทําให้สัตว์นํ้าสามารถอยู่
+                        อาศัยได้อย่างปลอดภัย ซึ่งปัจจุบันมีหน่วยงานต่างๆ
+                        ทั้งภาครัฐและเอกชนได้ร้องขอให้มูลนิธิชัยพัฒนาและ
+                        กรมชลประทานเข้าไปช่วยเหลือในการบําบัดนํ้าเสีย
+                        อย่างเร่งด่วนเป็นจํานวนมาก ทั้งในกรุงเทพฯและ
+                        ในพื้นที่ต่างจังหวัด</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="fish-tank-control">
+                        <img src="../Assets/images/fish-tank-2.gif" class="animated-gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+<script src="../rellax.min.js"></script>
+
+<script type="text/javascript">
+    var rellax = new Rellax('.rellax');
+</script>
+
+<!-- Prevent touchmove -->
+<script type="text/javascript">
+    function preventDefault(e) {
+        e.preventDefault();
+    }
+
+    function disableScroll() {
+        document.body.addEventListener('touchmove', preventDefault, {
+            passive: false
+        });
+    }
+
+    function enableScroll() {
+        document.body.removeEventListener('touchmove', preventDefault);
+    }
+</script>
+
+<script type="text/javascript">
+    function setBlinking() {
+        arrowOut.classList.remove("blink");
+        arrowOut.style.display = "none";
+
+    }
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        setBlinking();
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Script from Bt4 -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 
 </html>
