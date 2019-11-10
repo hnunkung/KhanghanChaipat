@@ -58,6 +58,12 @@ img {
 .containing-2 {
     position: relative;
     height: 750px;
+    margin-top: 6em;
+    transform: scale(1.25);
+    margin-left: 8em;
+    background-image: url(../Assets/images/kanghan-green.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .container-4 {
@@ -82,14 +88,6 @@ img {
     background: var(--main-bg-color);
     height: 1000px;
     margin-top: 2em;
-}
-
-.clipKhan {
-    position: fixed;
-    left: 0%;
-    width: 20px;
-    height: 20px;
-    display: block;
 }
 
 .margin-push-paragraph {
@@ -238,14 +236,29 @@ img {
     font-size: 14px;
 }
 
-.fish-tank-control {
-    margin-left: -30em;
+/* trophy */
+.trophy_result {
+    width: 100%;
+}
+
+img.trophy {
+    width: 100%;
 }
 
 /* fish tank */
 img.animated-gif {
     /* width: 100%; */
     height: auto;
+}
+
+.fish-tank-control {
+    margin-left: -30em;
+}
+
+#line-type-result {
+    top: 2em;
+    left: 20em;
+    position: absolute;
 }
 
 #arrowOut {
@@ -317,9 +330,9 @@ img.animated-gif {
 
 .letter7 {
     position: absolute;
-    top: 3em;
-    left: 5em;
-    font-size: 2.25em;
+    top: 3.5em;
+    left: 16.5em;
+    font-size: 1.25em;
     font-weight: 900;
     color: white;
     font-family: 'prompt', sans-serif !important;
@@ -550,10 +563,18 @@ img.animated-gif {
 
     .containing-2 {
         height: 1400px;
+        margin-left: 0em;
+        background-image: none;
+    }
+
+    .containing-2-img-mobile {
+        background-image: url(../Assets/images/kanghan-green-ver.svg);
+        background-size: cover;
     }
 
     .containing-3 {
-        height: 700px !important;
+        height: 600px !important;
+        margin-left: 6em;
     }
 
     .container-4 {
@@ -596,6 +617,25 @@ img.animated-gif {
         margin-left: -36em;
     }
 
+    img.trophy {
+        width: 90%;
+    }
+
+    .trophy_result {
+        /* margin-top: 10em; */
+        position: absolute;
+        margin-bottom: 0px;
+    }
+
+
+
+    #line-type-result {
+        top: 4em;
+        left: 1em;
+        position: absolute;
+        width: 363px !important;
+        height: 172px;
+    }
 
     /* :default */
     .letter1 {
@@ -634,9 +674,10 @@ img.animated-gif {
     .letter7 {
         position: absolute;
         top: 18vw;
-        left: 10%;
-        font-size: 2em !important;
-        color: var(--main-bg-color) !important;
+        left: 5%;
+        font-size: 15px !important;
+        width: 25em;
+        /* color: var(--main-bg-color) !important; */
     }
 
 
@@ -773,16 +814,14 @@ img.animated-gif {
         margin-left: -20em;
     }
 
-
-
-    .place-area {
-        height: 750px;
-        background-image: url(../Assets/images/hierachy_2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0 2em;
-        background-color: white;
+    #line-type-result {
+        top: 2em;
+        left: -1em;
+        position: absolute;
+        width: 320px !important;
+        height: 252px;
     }
+
 
     .padding-top-1 {
         padding-top: 1em;
@@ -817,10 +856,12 @@ img.animated-gif {
     }
 
     .letter7 {
-        top: 4em;
-        left: 10%;
-        font-size: 1.75em !important;
+        top: 11vw;
+        left: 7%;
+        font-size: 18px !important;
+        width: 13em;
     }
+
 
 }
 
@@ -830,7 +871,7 @@ img.animated-gif {
     }
 
     .container-4 {
-        height: 700px;
+        height: 750px;
     }
 
     .padding-top-1 {
@@ -855,12 +896,20 @@ img.animated-gif {
 
     .fish-tank-control {
         margin-top: 7em;
-        margin-left: -14em;
+        margin-left: -13em;
         width: 220%
     }
 
     .animated-gif {
         width: 100%;
+    }
+
+    #line-type-result {
+        top: 1em;
+        left: -2em;
+        position: absolute;
+        width: 251px !important;
+        height: 260px;
     }
 
 
@@ -887,6 +936,13 @@ img.animated-gif {
         position: absolute;
         top: 100em;
         left: 10%;
+    }
+
+    .letter7 {
+        top: 11vw;
+        left: -11%;
+        font-size: 18px !important;
+        width: 13em;
     }
 
 
