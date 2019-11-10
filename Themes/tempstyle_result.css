@@ -33,6 +33,18 @@ body {
     user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 p {
     margin-top: 0rem;
     margin-bottom: -7rem;
@@ -41,6 +53,7 @@ p {
 img {
     /* min-width: 50% */
 }
+
 
 #div1 {
     overflow-x: hidden;
