@@ -206,7 +206,7 @@ img {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    color: #F9B9AC;
+    color: var(--main-bg-color);
     background-color: rgb(255, 255, 255)
 }
 
@@ -903,9 +903,9 @@ img.animated-gif {
 
     .letter4 {
         position: absolute;
-        top: 125px;
-        left: 30em;
-        font-size: 15px;
+        top: 254px;
+        left: 4em;
+        font-size: 16px;
     }
 
     .letter5 {
@@ -990,10 +990,9 @@ img.animated-gif {
     }
 
     .letter4 {
-        position: absolute;
-        top: 260px;
-        left: 22em;
-        width: 95px;
+        top: 244px;
+        left: 21em;
+        width: 78px;
         font-size: 13px;
     }
 
