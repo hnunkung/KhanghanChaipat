@@ -1,4 +1,4 @@
-/* Css */
+ Css */
 
 * {}
 
@@ -14,7 +14,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 48, 155);
+    background-color: rgb(234, 107, 83);
     /*background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
     font-family: "Ailerons";
     /* color: rgb(255, 255, 255); */
@@ -40,62 +40,139 @@ p {
 img {
     min-width: 50%
 }
-
 h1{
     font-size: 3em;
+    margin-top: 35px;
+    font-weight: bold;
+
+}
+h2{
+    font-size: 1.5em;
     margin-top: 130px;
     font-weight: bold;
-
+    color: #01379c;
 }
-#img3{
+
+hr.new1 {
+  border-top: 2px dashed;
+  width: 300px;
+  color: rgb(234, 107, 83);
+  position: absolute;
+  margin-top: 395px;
+  right: 200px;
+}
+hr.new2 {
+  border-top: 2px dashed;
+  width: 300px;
+  color: rgb(234, 107, 83);
+  position: absolute;
+  margin-top: 755px;
+  right: 200px;
+}
+hr.new3 {
+  border-top: 2px dashed;
+  width: 300px;
+  color: rgb(234, 107, 83);
+  position: absolute;
+  margin-top: 1080px;
+  right: 200px;
+}
+hr.new4 {
+  border-top: 2px dashed;
+  width: 300px;
+  color: rgb(234, 107, 83);
+  position: absolute;
+  margin-top: 1430px;
+  right: 200px;
+}
+
+#minitext{
+    color: #01379c;
+}
+#img1{
     position: absolute;
-    z-index: 103;
-    margin-top: 200px;
+    z-index: 101;
+    margin-top: 800px;
+    display: block;
+    margin-left: 25%;
     width: 100%;
-    height: auto;
-    right: -120px;
 }
-#data2{
-
-    z-index: 102;
-    color: white;
-    font-size: 3em;
-    margin-top: 400px;
-
-    position: absolute;
-    left: 15%;
-    font-family: 'Prompt', sans-serif !important;
-}
-#minihead{
-    
-    z-index: 102;
-    color: rgb(234, 107, 83);
-    font-size: 1.5em;
-    margin-top: 300px;
-    position: absolute;
-    left: 15%;
-    font-family: 'Prompt', sans-serif !important;
-    font-weight: bold;
-}
-
 img.animatic-gif{
     position: absolute;
     z-index: 101;
-    margin-top: 750px;
+    margin-top: 500px;
     width: 100%;
     height: auto;
 }
+
 img.animatic-gif2{
     position: absolute;
     z-index: 103;
-    margin-top: 250px;
+    margin-top: -170px;
+/*    left: -65px;*/
     width: 100%;
     height: auto;
 }
-#data1{
-    margin-top: 60px;
-
+#minihead1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #01379c;
+    margin-left: 1000px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 50px;
+    
 }
+#minihead2{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #01379c;
+    margin-left: 1000px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 420px;
+}
+#minihead3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #01379c;
+    margin-left: 1000px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 780px;
+    
+}
+#minihead4{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #01379c;
+    margin-left: 1000px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 1100px;
+    
+}
+#data1{
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 170px;
+}
+#data2{
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 500px;
+}
+#data3{
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 860px;
+}
+#data4{
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 1180px;
+}
+
 
 #div1 {
     overflow-x: hidden;
@@ -112,11 +189,9 @@ img.animatic-gif2{
 
 .curving_posture {
     right: 0;
+    min-width: 30%;
     left: auto;
     position: absolute;
-    width: 100%;
-    height: auto;
-    margin-top: -150px;
 }
 
 .font-area {
@@ -126,7 +201,7 @@ img.animatic-gif2{
 .place-area {
     /* display: flex; */
     background: white;
-    height: 1500px;
+    height: 1650px;
 }
 
 .clipKhan {
@@ -140,102 +215,27 @@ img.animatic-gif2{
 .margin-push-paragraph {
     margin-left: -.25em;
 }
-/*bubble*/
-/*
-.wrapper {
-  padding: 75px;
-}
 
-.inner-wrapper {
-  width: 50%;
-  margin: 50px auto 0;
-  position: relative;
-}
-
-.bubble {
-  background: #D4CE9C;
-  border-radius: 50%;
-  position: absolute;
-  top: 500;
-}
-
-.bubble-sm {
-  height: 3%;
-  width: 3%;
-  left: 50%;
-  animation: bubbles-rise 3s infinite;
-}
-
-.bubble-sm1 {
-  height: 3.5%;
-  width: 3.5%;
-  left:50%;
-  animation: bubbles-rise 2.2s infinite;
-  animation-delay: 0.25s;
-}
-
-.bubble-sm2 {
-  height: 5%;
-  width: 5%;
-  left: 40%;
-  animation: bubbles-rise 2.5s infinite;
-  animation-delay: 0.15s;
-}
-
-.bubble-sm3 {
-  height: 4%;
-  width: 4%;
-  left: 30%;
-  animation: bubbles-rise 1.75s infinite;
-}
-
-.bubble-sm4 {
-  height: 3%;
-  width: 3%;
-  left: 50%;
-  animation: bubbles-rise 2.5s infinite;
-  animation-delay: 0.1s;
-}
-
-.bubble-sm5 {
-  height: 5.5%;
-  width: 5.5%;
-  left: 60%;
-  animation: bubbles-rise 2s infinite;
-  animation-delay: 0.1s;
-}
-
-.bubble-sm6 {
-  height: 3%;
-  width: 3%;
-  left: 70%;
-  animation: bubbles-rise 3s infinite;
-  animation-delay: 0.2s;
-}
-
-.bubble-md {
-  height: 7%;
-  width: 7%;
-  left: 60%;
-  animation: bubbles-rise 3.5s infinite;
-  animation-delay: 0.2s;
-}
-
-.bubble-md1 {
-  height: 7%;
-  width: 7%;
-  left: 55%;
-  animation: bubbles-rise 2s infinite;
-  animation-delay: 0.25s;
-}
-
-@keyframes bubbles-rise {
-    100% {
-        transform: translateY(-900px) scale(0.5);
-        opacity: 0;
-        animation-timing-function: ease-in;
+/* Blink */
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
     }
-}*/
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+.blink {
+    display: block;
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
 
 /* navbar */
 /* Dropdown Button */
@@ -360,11 +360,12 @@ img.animatic-gif2{
 
 .letter4 {
     position: absolute;
-    top: 160px;
-    left: 65%;
-    font-size: 25px;
+    top: 190px;
+    left: 75%;
+    font-size: 20px;
     color: rgb(255, 145, 42);
     font-family: 'Prompt', sans-serif !important;
+    font-weight: bold;
 }
 
 .letter5 {
@@ -372,7 +373,7 @@ img.animatic-gif2{
     top: -50px;
     left: 15%;
     font-size: 20px;
-    color: #01379c;
+    color: rgb(234, 107, 83);
     font-family: 'Prompt', sans-serif !important;
 }
 
@@ -497,20 +498,13 @@ img.animatic-gif2{
     /* transform: rotate(30deg); */
 }
 
-
-/* Animation ทำ bubble */
-/* set Keyframe ไว้อันนึง */
-
 /* font */
-.font-kanit {
-    font-family: 'Kanit', sans-serif !important;
+.font-Prompt {
+    font-family: 'Prompt', sans-serif !important;
 }
 
 .font-chonburi {
     font-family: 'Chonburi', sans-serif !important;
-}
-.font-Prompt{
-    font-family: 'Prompt', sans-serif !important;
 }
 
 .font-letting-0 {
@@ -525,98 +519,144 @@ img.animatic-gif2{
     letter-spacing: 8px;
 }
 
+/*responsive mobile*/
 
-/*respon mobile*/
 @media only screen and (max-width: 768px) {
-    /*.letter1 {
-        position: absolute;
-        font-size: 520%;
-        white-space: nowrap;
-        width: 100%;
-        height: 1000px;
-        overflow: hidden;
-        text-overflow: clip;
-        display: flex;
-        justify-content: space-between;
-        flex-flow: wrap column;
-        align-items: flex-start;
-    }*/
-
-    .curving_posture{
-        width: 200%;
-        margin:0;
-        position: absolute;
-        height: auto;
-        margin-top: -20vw;
-    }
-
     .letter5 {
         position: absolute;
-        margin-top: 110vw;
-/*        top: 400px;*/
+        margin-top: -5vw;
         left: 8%;
-        font-size: 4vw;
+        font-size: 2.5vw;
         color: #01379c;
         font-family: 'Prompt', sans-serif !important;
     }
-    #data1{
-        margin-top: 30px;
-        font-size:4vw; 
-
-    }
-    .place-area {
-        /* display: flex; */
-        background: white;
-        height: 310vw;
-        width: 120%;
-    }
-    img.animatic-gif{
-        position: absolute;
-        z-index: 101;
-        margin-top: 250vw;
-        width: 125%;
-        height: auto;
-        left: -13%;
-    }
-    #minihead{
-        
-        z-index: 102;
-        color: rgb(234, 107, 83);
-        font-size: 15px;
-        margin-top: 25vw;
-        position: absolute;
-        left: 13%;
-        font-family: 'Prompt', sans-serif !important;
+    h1{
+        font-size: 6vw;
+        margin-top: 4vw;
         font-weight: bold;
+        color:rgb(234, 107, 83); 
+
     }
     img.animatic-gif2{
         position: absolute;
         z-index: 103;
-        margin-top: 25vw;
-        margin-left: -25px;
-        width: 125%;
+        margin-top: -13vw;
+        width: 150%;
         height: auto;
+        left: -15vw;
+    }
+    img.animatic-gif{
+        position: absolute;
+        z-index: 101;
+        margin-top: 60vw;
+        width: 150%;
+        height: auto;
+    }
+    #minihead1{
+        position: absolute;
+        margin-top: 180vw;
+        z-index: 102;
+        font-size: 7vw;
+        font-weight: bold;
+        color: #01379c;
+        margin-left: 10vw;
+    }
+
+    #minihead2{
+        position: absolute;
+        margin-top: 272vw;
+        z-index: 102;
+        font-size: 7vw;
+        font-weight: bold;
+        color: #01379c;
+        margin-left: 10vw;
+    }
+
+    #minihead3{
+        position: absolute;
+        margin-top: 358vw;
+        z-index: 102;
+        font-size: 7vw;
+        font-weight: bold;
+        color: #01379c;
+        margin-left: 10vw;
+    }
+
+    #minihead4{
+        position: absolute;
+        margin-top: 435vw;
+        z-index: 102;
+        font-size: 7vw;
+        font-weight: bold;
+        color: #01379c;
+        margin-left: 10vw;
+    }
+
+    #data1{
+        margin-left: 10vw;
+        position: absolute;
+        margin-top: 205vw;
+        font-size: 5vw;
     }
     #data2{
-
-        z-index: 102;
-        color: white;
-        font-size: 4.25vw;
-        margin-top: 39vw;
+        margin-left: 10vw;
         position: absolute;
-        left: 15%;
-        font-family: 'Prompt', sans-serif !important;
+        margin-top: 285vw;
+        font-size: 5vw;
     }
-    #img3{
+    #data3{
+        margin-left: 10vw;
         position: absolute;
-        z-index: 100;
-        margin-top: 27vw;
-        width: 110%;
-        height: auto;
-        left: -2px;    }
+        margin-top: 372vw;
+        font-size: 5vw;
+    }
+    #data4{
+        margin-left: 10vw;
+        position: absolute;
+        margin-top: 450vw;
+        font-size: 5vw;
+    }
+
+    hr.new1 {
+      border-top: 2px dashed;
+      width: 300px;
+      color: rgb(234, 107, 83);
+      position: absolute;
+      margin-top: 265vw;
+      right: 30vw;
+    }
+    hr.new2 {
+      border-top: 2px dashed;
+      width: 300px;
+      color: rgb(234, 107, 83);
+      position: absolute;
+      margin-top: 352vw;
+      right: 30vw;
+    }
+    hr.new3 {
+      border-top: 2px dashed;
+      width: 300px;
+      color: rgb(234, 107, 83);
+      position: absolute;
+      margin-top: 430vw;
+      right: 30vw;
+    }
+    hr.new4 {
+      border-top: 2px dashed;
+      width: 300px;
+      color: rgb(234, 107, 83);
+      position: absolute;
+      margin-top: 515vw;
+      right: 30vw;
+    }
+
+    .place-area {
+        /* display: flex; */
+        background: white;
+        height: 540vw;
+        width: 120%;
+    }
 }
-
-
 
 /*Manual Responsive Check window size*/
 /* แบ่งตามขนาด width ของ Windows ทำงานคล้าย if */
@@ -629,9 +669,9 @@ img.animatic-gif2{
         right: 1.5%;
     }
 
-}
+}*/
 
-@media only screen and (max-width: 1366px) {}*/
+/*@media only screen and (max-width: 1366px) {}*/
 
 /*ของ dropbtn*/
 
@@ -657,7 +697,8 @@ img.animatic-gif2{
     }
 
     .letter1 {
-
+         position: absolute; 
+         max-width: 200px; 
         font-size: 750%;
         white-space: nowrap;
         width: 100%;
@@ -698,6 +739,7 @@ img.animatic-gif2{
 
     .unusual-flex {
         display: flex;
+         justify-content: space-evenly; 
         flex-flow: wrap row;
         align-items: flex-start;
     }
@@ -780,4 +822,4 @@ img.animatic-gif2{
         left: 55px;
         font-size: 13px;
     }
-}*/
+}
