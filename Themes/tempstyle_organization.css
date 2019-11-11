@@ -605,6 +605,48 @@ img.animatic-gif2{
         height: 540vw;
         width: 120%;
     }
+
+    /* addtional */
+    .unusual-flex {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: flex-start;
+    }
+
+    .margin-push-paragraph-backward-025 {
+        margin-left: .12em !important;
+    }
+
+    .letter1 {
+            font-size: 700%;
+            white-space: nowrap;
+            width: 100%;
+            height: 900px;
+            overflow: hidden;
+            text-overflow: clip;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: wrap column;
+            align-items: flex-start;
+
+        }
+
+        .letter4 {
+            position: absolute;
+            top: 635px;
+            left: 68%;
+            font-size: 15px;
+        }
+
+/*        .letter5 {
+            position: absolute;
+            margin-top: 110vw;
+            top: 400px;
+            left: 8%;
+            font-size: 4vw;
+            color: #01379c;
+            font-family: 'Prompt', sans-serif !important;
+        }*/
 }
 
 @media only screen and (min-width: 768px) {

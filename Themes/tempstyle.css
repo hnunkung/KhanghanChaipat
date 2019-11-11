@@ -570,6 +570,27 @@ img.animatic-gif2{
         margin-top: -19vw;
     }
 
+    .letter1 {
+        font-size: 700%;
+        white-space: nowrap;
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        text-overflow: clip;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap column;
+        align-items: flex-start;
+
+    }
+
+    .letter4 {
+        position: absolute;
+        top: 635px;
+        left: 68%;
+        font-size: 15px;
+    }
+
     .letter5 {
         position: absolute;
         margin-top: 110vw;
@@ -634,6 +655,44 @@ img.animatic-gif2{
         width: 110%;
         height: auto;
         left: -2px;    
+    }
+
+    .unusual-flex {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: flex-start;
+    }
+
+    .margin-push-paragraph-backward {
+        margin-left: 1.5em;
+        margin-top: -100px;
+    }
+
+    .margin-push-paragraph-forward {
+        margin-left: -1em !important;
+        margin-top: -50px;
+    }
+
+    .margin-push-paragraph-forward-05 {
+        margin-left: -.5em !important;
+        margin-top: -50px;
+    }
+
+    .margin-push-paragraph-forward-25 {
+        margin-left: -.25em !important;
+
+    }
+
+    .margin-push-paragraph-up-50 {
+        margin-top: -50px;
+    }
+
+    .margin-push-paragraph-up-100 {
+        margin-top: -100px;
+    }
+
+    .margin-push-paragraph-up-150 {
+        margin-top: -150px;
     }
 
     .bubble,
