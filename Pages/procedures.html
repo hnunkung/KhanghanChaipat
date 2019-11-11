@@ -167,7 +167,7 @@
             </div>
         </div>
         <!-- end carousel -->
-        <img src="kanghan_people.gif" class="kanghan_people" alt="">
+        <img src="../Assets/images/khanghan_people1.gif" id="khanhan-people" class="kanghan_people" alt="">
     </div>
 
 
@@ -225,6 +225,25 @@
         }
     }
 </script>
+<Script type="text/javascript">
+    var a = document.getElementById('khanhan-people');
+    setTimeout(setKhanghanPeople(), 5000);
+
+    function setKhanghanPeople() {
+        setTimeout(function change1() {
+            a.src = '../Assets/images/khanghan_people2.gif';
+            console.log("!2");
+        }, 5000);
+        setTimeout(function change2() {
+            a.src = '../Assets/images/khanghan_people3.gif';
+            console.log("!3");
+        }, 9000);
+        setTimeout(function change3() {
+            a.src = '../Assets/images/khanghan_people_loop.gif';
+            console.log("!4");
+        }, 14000);
+    }
+</Script>
 
 <!-- Script from Bt4 -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
