@@ -552,6 +552,11 @@ img.animatic-gif2{
         flex-flow: wrap column;
         align-items: flex-start;
     }*/
+
+    body {
+        overflow: auto !important;
+        filter: none !important;
+    }
     .containing-controller{
         height: 410vw !important;
         overflow:hidden !important;
@@ -915,7 +920,12 @@ img.animatic-gif2{
         }
     }
 }
-
+@media only screen and (max-width: 1100px) {
+    body {
+        overflow: hidden;
+        filter: blur(20px);
+    }
+}
 
 
 /*Manual Responsive Check window size*/
