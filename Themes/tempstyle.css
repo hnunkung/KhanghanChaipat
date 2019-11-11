@@ -1,4 +1,7 @@
 /* Css */
+:root {
+  --main-blue-color: #01379c;
+}
 
 * {}
 
@@ -147,6 +150,102 @@ img.animatic-gif2{
 .margin-push-paragraph {
     margin-left: -.25em;
 }
+
+/*bubble*/
+.bubble,
+.bubble::before,
+.bubble::after {
+    content: '';
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    background-color: white;
+    right: -0.1em;
+    bottom: 0em;
+    border-radius: 50%;
+    stroke: black;
+    box-shadow: 0 0 0 2px var(--main-blue-color);
+    transition:;
+}
+
+.bubble {
+    animation:
+        drift 2s infinite,
+        bubble-1 2s infinite;
+    animation:
+        drift 2s infinite,
+        bubble-3 2s infinite;
+    animation:
+        drift 0.5s infinite,
+        bubble-4 2s infinite;
+}
+
+.bubble::before {
+    animation:
+        drift 3s infinite,
+        bubble-2 3s infinite;
+    animation:
+        drift 5s infinite,
+        bubble-1 1s infinite;
+}
+
+.bubble::after {
+    animation:
+        drift 5s infinite,
+        bubble-3 4s infinite;
+}
+
+@keyframes drift {
+
+    0%,
+    100% {
+        filter: opacity(1);
+    }
+
+    15% {
+        filter: opacity(1);
+    }
+}
+
+@keyframes bubble-1 {
+    to {
+        width: 1em;
+        height: 1em;
+        right: -20em;
+        bottom: -2em;
+    }
+}
+
+@keyframes bubble-2 {
+    to {
+        width: 2.5em;
+        height: 2.5em;
+        right: 6em;
+        bottom: 5em;
+    }
+}
+
+@keyframes bubble-3 {
+    to {
+        width: 1em;
+        height: 1em;
+        right: -15em;
+        bottom: 5em;
+    }
+
+}
+
+@keyframes bubble-4 {
+    to {
+        width: 2em;
+        height: 2em;
+        right: -20em;
+        bottom: 7em;
+    }
+}
+
+
+
 /*bubble*/
 /*
 .wrapper {
@@ -495,8 +594,8 @@ img.animatic-gif2{
 
 .box6 {
     /* backgound: rgb(10, 10, 56); */
-    height: 20%;
-    width: 5em;
+/*    height: 20%;
+    width: 5em;*/
     position: absolute;
     top: 18%;
     left: 30%;

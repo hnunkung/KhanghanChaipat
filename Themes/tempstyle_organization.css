@@ -490,6 +490,12 @@ img.animatic-gif2{
 /*responsive mobile*/
 
 @media only screen and (max-width: 768px) {
+
+    body {
+        overflow: auto !important;
+        filter: none !important;
+    }
+
     .letter5 {
         position: absolute;
         margin-top: -5vw;
@@ -602,21 +608,8 @@ img.animatic-gif2{
 }
 
 @media only screen and (min-width: 768px) {
-/*    .letter5 {
-        position: absolute;
-        margin-top: 0vw;
-        margin-left: -3vw;
-        font-size: 1.2vw;
-        color: #01379c;
-        font-family: 'Prompt', sans-serif !important;
-    }
-    h1{
-        font-size: 3.6vw;
-        margin-top: 5vw;
-        font-weight: bold;
-        color:rgb(234, 107, 83); 
 
-    }*/
+
     #head1{
 /*        position: absolute;*/
         margin-top: 10vw;
@@ -732,6 +725,13 @@ img.animatic-gif2{
     }
 
 
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        overflow: hidden;
+        filter: blur(20px);
+    }
 }
 
 /*Manual Responsive Check window size*/

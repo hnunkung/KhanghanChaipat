@@ -100,7 +100,10 @@
                 </figure>
                 
                 <img src="../Assets/images/kanghan1.gif" class="animatic-gif">
-                
+                <div class="box6" id="bubbles_1" style="transform: translate(220px, 650px) rotate(-75deg);">
+                    <span class="bubble"></span>
+
+                </div>
                 
             </div>
 
@@ -142,7 +145,57 @@
     </div>
 
 </body>
-
+<script>
+    let state = 1000;
+    setInterval(() => {
+        if (state < 3000) {
+            setTimeout(() => {
+                goBubbles();
+                state += 550;
+                // console.log(state);
+            }, 500);
+        }
+    }, state);
+    setTimeout(() => {
+        setBlinking();
+    }, 5460);
+    function setRotating() {
+        let r = window.pageYOffset / 2;
+        arrowOut.style.transform = `rotate(${r}deg)`;
+    }
+    window.addEventListener("scroll", setRotating);
+    function goBubbles() {
+        let i = 0;
+        var spans = document.createElement("SPAN");
+        var rand = Math.floor((Math.random() * 6));
+        // console.log(rand);
+        spans.classList.add('bubble')
+        document.querySelectorAll('.bubble')[i].style.bottom = rand + `em`;
+        document.getElementById('bubbles_1').appendChild(spans);
+        i++;
+    }
+    function setBlinking() {
+        arrowOut.classList.remove("blink");
+        arrowOut.style.display = "none";
+    }
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        setBlinking();
+    }
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 <script src="../rellax.min.js"></script>
 
 <script type="text/javascript">
