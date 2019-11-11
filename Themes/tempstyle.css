@@ -65,17 +65,18 @@ h1{
     position: absolute;
     left: 15%;
     font-family: 'Prompt', sans-serif !important;
+    font-weight: 600;
 }
 #minihead{
     
-    z-index: 102;
+    /*z-index: 102;*/
     color: rgb(234, 107, 83);
     font-size: 1.5em;
     margin-top: 300px;
     position: absolute;
     left: 15%;
     font-family: 'Prompt', sans-serif !important;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 img.animatic-gif{
@@ -103,11 +104,17 @@ img.animatic-gif2{
 
 .contained {
     display: inline;
+    overflow-x: hidden;
+
 }
 
 .containing {
     position: relative;
     height: 850px;
+    overflow-x: initial !important;
+    overflow-x: hidden;
+
+
 }
 
 .curving_posture {
@@ -541,13 +548,17 @@ img.animatic-gif2{
         flex-flow: wrap column;
         align-items: flex-start;
     }*/
+    .containing-controller{
+        height: 410vw !important;
+        overflow:hidden !important;
+    }
 
     .curving_posture{
         width: 200%;
         margin:0;
         position: absolute;
         height: auto;
-        margin-top: -20vw;
+        margin-top: -19vw;
     }
 
     .letter5 {
@@ -560,15 +571,15 @@ img.animatic-gif2{
         font-family: 'Prompt', sans-serif !important;
     }
     #data1{
-        margin-top: 30px;
-        font-size:4vw; 
+        margin-top: 5vw;
+        font-size:4vw;
 
     }
     .place-area {
         /* display: flex; */
         background: white;
         height: 310vw;
-        width: 120%;
+        width: 100%;
     }
     img.animatic-gif{
         position: absolute;
@@ -582,10 +593,10 @@ img.animatic-gif2{
         
         z-index: 102;
         color: rgb(234, 107, 83);
-        font-size: 15px;
+        font-size: 2.5vw;
         margin-top: 25vw;
         position: absolute;
-        left: 13%;
+        left: 15%;
         font-family: 'Prompt', sans-serif !important;
         font-weight: bold;
     }
@@ -608,9 +619,98 @@ img.animatic-gif2{
         font-family: 'Prompt', sans-serif !important;
     }
     #img3{
-        position: absolute;
+        position: relative;
         z-index: 100;
         margin-top: 27vw;
+        width: 110%;
+        height: auto;
+        left: -2px;    }
+}
+@media only screen and (min-width: 768px) {
+    /*.letter1 {
+        position: absolute;
+        font-size: 520%;
+        white-space: nowrap;
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+        text-overflow: clip;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap column;
+        align-items: flex-start;
+    }*/
+    .containing-controller{
+        height: 180vw !important;
+        overflow:hidden !important;
+    }
+
+    .curving_posture{
+        width: 100%;
+        margin:0;
+        position: absolute;
+        height: auto;
+        margin-top: -9.9vw;
+    }
+
+    .letter5 {
+        position: absolute;
+        margin-top: 1.5vw;
+/*        top: 400px;*/
+        left: 8%;
+        font-size: 1.3vw;
+        color: #01379c;
+        font-family: 'Prompt', sans-serif !important;
+    }
+    #data1{
+        margin-top: 30px;
+        font-size:1.5vw;
+    }
+    .place-area {
+        /* display: flex; */
+        background: white;
+        height: 110vw;
+        width: 100%;
+    }
+    img.animatic-gif{
+        position: absolute;
+        z-index: 101;
+        margin-top: 50vw;
+        width: 100%;
+        height: auto;
+    }
+    #minihead{
+        
+        z-index: 102;
+        color: rgb(234, 107, 83);
+        font-size: 2vw;
+        margin-top: 10vw;
+        position: absolute;
+        left: 15%;
+        font-family: 'Prompt', sans-serif !important;
+        font-weight: bold;
+    }
+    img.animatic-gif2{
+        position: absolute;
+        z-index: 103;
+        margin-top: 7vw;
+        width: 100%;
+        height: auto;
+    }
+    #data2{
+
+        z-index: 102;
+        color: white;
+        font-size: 3.5vw;
+        margin-top: 17.5vw;
+        position: absolute;
+        left: 15%;
+        font-family: 'Prompt', sans-serif !important;
+    }
+    #img3{
+/*        position: relative;*/
+        z-index: 100;
+        margin-top: 1vw;
         width: 110%;
         height: auto;
         left: -2px;    }
