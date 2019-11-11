@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="user-scalable=no, width=500, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="user-scalable=no, width=500, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link href="https://fonts.googleapis.com/css?family=Chonburi|Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../Themes/tempstyle.css">
     <link href="../fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../Assets/images/water-drop.png" />
-    <title>historical</title>
+    <title>Historical</title>
 
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <div class="dropdown">
+    <div class="dropdown" style="z-index: 200">
         <div onclick="myFunction()" class="dropbtn">
             <!-- <img src="hamburger_01.svg" class="clipKhan"> -->
             <div class="dropdown blink" id="arrowOut">
@@ -27,18 +29,19 @@
                 <!-- <p style="font-size: 10px">Click here</p> -->
             </div>
         </div>
-        <div id="myDropdown" class="dropdown-content" style="font-family: 'Kanit', sans-serif;">
+        <div id="myDropdown" class="dropdown-content" style="font-family: 'Prompt', sans-serif;">
             <a href="../index.html" style="font-size: 20px;">กลับสู่หน้าหลัก</a>
-            <a href="detail.html">รายละเอียด</a>
+            <a href="Pages/historical.html">ที่มาและความสำคัญ</a>
+            <a href="Pages/detail.html">รายละเอียด</a>
             <a href="#">ขั้นตอนการทำงาน</a>
-            <a href="result.html">ผลลัพธ์จากการใช้งาน</a>
-            <a href="#">หน่วยงานที่เกี่ยวข้อง</a>
+            <a href="Pages/result.html">ผลลัพธ์จากการใช้งาน</a>
+            <a href="Pages/organization.html">หน่วยงานที่เกี่ยวข้อง</a>
         </div>
     </div>
 
     <div class="contained">
         <div class="letter4 font-size-xs">
-            <p style="font-family: 'Kanit', sans-serif;" class="font-letting-0">
+            <p style="font-family: 'Prompt', sans-serif;" class="font-letting-0">
                 ที่มาและความสำคัญ<br>
                 ของโครงการ <br>
                 ที่มีต่อประเทศชาติ <br>
@@ -68,29 +71,71 @@
         </div>
         <div class="containing">
             <div class="letter5 font-size-xs">
-                <p style="font-family: 'Kanit', sans-serif;" class="rellax font-letting-0 display-4 font-weight-bold "
-                    data-rellax-speed="">
+                <h1>
                     ที่มาของ<br>
                     โครงการ <br>
-                </p>
-            </div>
-            <div class="letter6 font-size-xs">
-                <p style="font-family: 'Kanit', sans-serif;" class="rellax font-letting-0 display-4 font-weight-bold "
-                    data-rellax-speed="">
-                    aaaaa<br>
-                    aaaaa <br>
+                </h1>
+                <p id="data1">
+                    จุดเริ่มต้นของโครงการนั้น เริ่มจากที่พระบาทสมเด็จ <br>
+                    พระเจ้าอยู่หัวรัชกาลที่ 9 ทรงมีพระประสงค์ที่ต้องการ <br>
+                    จะแก้ไขความเสื่อมโทรมของสภาพ แหล่งนํ้าทั่วทั้ง <br>
+                    ภูมิภาค พระองค์จึงทรงพระกรุณาโปรดเกล้าฯ ให้ <br>
+                    มูลนิธิชัยพัฒนาวิจัยและประดิษฐ์เครื่องกลเติมอากาศ <br>
+                    ภายใต้ชื่อ “กังหันนํ้าชัยพัฒนา” โดยทรงได้ <br>
+                    แนวทางจาก “หลุก” ซึ่งเป็นอุปกรณ์วิดนํ้า <br>
+                    เข้านาของชาวบ้านทั่วไป <br>
+                    ในระยะแรก ทรงแนะนําให้บรรเทานํ้าเสียด้วย <br>
+                    ผักตบชวาและพืชนํ้า แต่ต่อมาสภาพความเน่าเสีย <br>
+                    ของนํ้ามีแนวโน้มที่รุนแรงมากยิ่งขึ้นทําให้วิธีการนี้ <br>
+                    อาจจะไม่ได้ผล พระองค์จึงทรงมีพระราชดําริให้ <br>
+                    ประดิษฐ์เครื่องกลเติมอากาศแบบประหยัดใน <br>
+                    รูปแบบของ "ไทยทําไทยใช้" มาใช้แทน
                 </p>
             </div>
             <div class="place-area">
                 <figure>
                     <div>
-                        <img src="../Assets/images/curving_posture.jpg" class="curving_posture" alt="curving-1">
+                        <img src="../Assets/images/curving_posture.gif" class="curving_posture" alt="curving-1">
                     </div>
 
                 </figure>
+                
+                <img src="../Assets/images/kanghan1.gif" class="animatic-gif">
+                
+                
             </div>
-        </div>
+
+        <!-- <div class="wrapper">
+            <div class="inner-wrapper">
+                <div class="bubbles">
+                    <div class="bubble bubble-sm"></div>
+                    <div class="bubble bubble-sm1"></div>
+                    <div class="bubble bubble-sm2"></div>
+                    <div class="bubble bubble-sm3"></div>
+                    <div class="bubble bubble-sm4"></div>
+                    <div class="bubble bubble-sm5"></div>
+                    <div class="bubble bubble-sm6"></div>
+                    <div class="bubble bubble-md"></div>
+                    <div class="bubble bubble-md1"></div>
+                </div>
+            </div>
+        </div> -->
+    <div>
+        <p style="font-family: 'Prompt', sans-serif;" id="minihead">ความสำคัญของโครงการ</p>
+        <img src="../Assets/images/line2.gif" class="animatic-gif2">
+        <p style="font-family: 'Prompt', sans-serif;" id="data2">
+            กังหันชัยพัฒนา เป็นกังหันนํ้าเพื่อบําบัด <br>
+            นํ้าเสียด้วย วิธีการหมุนปั่นเติมอากาศ <br>
+            ให้นํ้าเสียกลายเปนนํ้าดี ทําให้มันมีความ <br>
+            สําคัญมากต่อการพัฒนาคุณภาพแหล่ง <br>
+            นํ้าและเพื่อประยุกต์ใช้บําบัดนํ้าเสีย รวม <br>
+            ทั้งเพิ่มออกซิเจน ให้กับบ่อเพาะเลี้ยง <br>
+            สัตว์นํ้าทางการเกษตร <br>
+        </p>
+        <img src="../Assets/images/gear.png" id="img3">
     </div>
+    </div>
+
 </body>
 
 <script src="../rellax.min.js"></script>
