@@ -554,10 +554,10 @@
      img.animatic-gif2 {
          position: absolute;
          z-index: 103;
-         margin-top: -13vw;
-         width: 150%;
+         margin-top: 4vw;
+         width: 105%;
          height: auto;
-         left: -15vw;
+         left: -7vw;
      }
 
      img.animatic-gif {
