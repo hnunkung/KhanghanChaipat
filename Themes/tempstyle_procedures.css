@@ -668,6 +668,7 @@ img.kanghan_people {
         z-index: 800;
         display: flex;
         justify-content: space-around;
+        align-items: baseline;
         width: 3.5em;
     }
 
