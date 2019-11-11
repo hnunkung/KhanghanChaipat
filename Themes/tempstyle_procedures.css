@@ -38,6 +38,22 @@ p {
     margin-bottom: -7rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
 img {
     /* min-width: 50% */
 }
@@ -70,16 +86,31 @@ img {
 
 .conrousel-modified {
     padding: 5.5em 8.5em;
+    background-color: var(--main-blue-color);
 }
 
 .corousel-inner-controller {
     border: 1px solid white;
-    padding: 2em 2em;
+    padding: 2.5em 3em;
     height: 380px;
+}
+
+.corousel-p-hor-display {
+    display: block;
+}
+
+.corousel-p-ver-display {
+    display: none;
 }
 
 img.kanghan_people {
     width: 100%;
+}
+
+.button-carousel {
+    position: absolute;
+    right: 3.5em;
+    z-index: 800;
 }
 
 /* set cover container */
@@ -120,6 +151,7 @@ img.kanghan_people {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
+
 
 
 
@@ -605,6 +637,37 @@ img.kanghan_people {
         margin-left: 0;
     }
 
+    .conrousel-modified {
+        padding: 3.5em 2.5em;
+    }
+
+    .col-corousel-control {
+        max-width: 100% !important;
+        height: 280px;
+    }
+
+    .corousel-inner-controller {
+        border: 1px solid white;
+        padding: 2em 2em;
+        height: 400px;
+
+    }
+
+    .corousel-p-hor-display {
+        display: none;
+    }
+
+    .corousel-p-ver-display {
+        display: block;
+    }
+
+    .button-carousel {
+        position: absolute;
+        right: 1.5em;
+        bottom: .5em;
+        z-index: 800;
+    }
+
 
     /* :default */
     .letter1 {
@@ -664,6 +727,7 @@ img.kanghan_people {
 
     .after-font-size-xs {
         font-size: .65em;
+        height: 220px !important;
     }
 
 
@@ -783,6 +847,12 @@ img.kanghan_people {
         top: 4em;
         left: 10%;
         font-size: 1.75em !important;
+    }
+
+    .corousel-inner-controller {
+        border: 1px solid white;
+        padding: 2em 2em;
+        height: 620px;
     }
 
 }
