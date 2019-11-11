@@ -144,11 +144,11 @@
     setTimeout(() => {
         setBlinking();
     }, 5460);
-    function setRotating() {
-        let r = window.pageYOffset / 2;
-        arrowOut.style.transform = `rotate(${r}deg)`;
-    }
-    window.addEventListener("scroll", setRotating);
+    // function setRotating() {
+    //     let r = window.pageYOffset / 2;
+    //     arrowOut.style.transform = `rotate(${r}deg)`;
+    // }
+    // window.addEventListener("scroll", setRotating);
     function goBubbles() {
         let i = 0;
         var spans = document.createElement("SPAN");
@@ -159,10 +159,12 @@
         document.getElementById('bubbles_1').appendChild(spans);
         i++;
     }
+
     function setBlinking() {
         arrowOut.classList.remove("blink");
         arrowOut.style.display = "none";
     }
+
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
         setBlinking();

@@ -49,17 +49,20 @@
             <div class="font-area">
                 <figure>
                     <div class="letter1 font-chonburi font-letting-1 rellax" data-rellax-speed="2">
-                        <p style="margin-left:-15px; color: white;" class="margin-push-paragraph-forward-25 unusual-flex">
+                        <p style="margin-left:-15px; color: white;"
+                            class="margin-push-paragraph-forward-25 unusual-flex">
                             <span>หน่วย</span>
                             <span class="margin-push-paragraph-backward-025" style="margin-left:-.25em;">งาน</span>
                         </p>
-                        <div style="margin-left: 700px; margin-top: 2%;" class="rellax" data-rellax-speed="2">
+                        <div style="margin-left: 700px; margin-top: 2%;" class="rellax contain-control-support"
+                            data-rellax-speed="2">
                             <p class="unusual-flex" style="display: flex;">
-                                <span class="margin-push-paragraph-forward">ส่งเสริม</span>
+                                <span class="margin-push-paragraph-forward">ส่ง</span>
+                                <span class="contain-control-port">เสริม</span>
                                 <!-- <span class="margin-push-paragraph-up-50">สำคัญ</span> -->
                             </p>
                         </div>
-                        <p style="margin-left: 200px;" class="unusual-flex margin-push-paragraph-up-100 ">พัฒนา
+                        <p style="margin-left: 200px;" class="contain-control-develop ">พัฒนา
 
                         </p>
                     </div>
@@ -69,7 +72,7 @@
         </div>
         <div class="containing">
 
-         <img src="../Assets/images/line3.gif" class="animatic-gif2">
+            <img src="../Assets/images/line3.gif" class="animatic-gif2">
             <div class="letter5 font-size-xs">
                 <h2 id="head1">หน่วยงานที่เกี่ยวข้อง</h2>
 
@@ -81,14 +84,15 @@
                     เพื่อความยั่งยืน<br>
                 </h1>
 
-                
+
             </div>
-            
-            <img src="../Assets/images/buiding.gif" class="animatic-gif">
-            
-            <div >
+            <div class="extensive-control-building">
+                <img src="../Assets/images/buiding.gif" class="animatic-gif" id="building">
+            </div>
+
+            <div>
                 <p id="minihead1" style="font-family: 'Prompt', sans-serif; color: #01379c; ">มูลนิธิอุทกพัฒน์ใน <br>
-                                พระบรมราชูปถัมป์</p>
+                    พระบรมราชูปถัมป์</p>
                 <p id="data1" style="font-family: 'Prompt', sans-serif; color: #01379c;">
                     มูลนิธิอุทกพัฒน์ในพระบรมราชูถัมป์ <br>
                     มีวัตถุประสงค์ในการส่งเสริม <br>
@@ -99,7 +103,7 @@
                     ตามแนวพระราชดําริ <br>
 
                 </p>
-         
+
 
                 <p id="minihead2" style="font-family: 'Prompt', sans-serif; color: #01379c;">มูลนิธิชัยพัฒนา</p>
                 <p id="data2" style="font-family: 'Prompt', sans-serif; color: #01379c; ">
@@ -112,19 +116,19 @@
                     โครงการของรัฐถูกจํากัดด้วย <br>
                     เงื่อนไขของกฎระเบียบต่างๆ <br>
                 </p>
-                
+
 
                 <p id="minihead3" style="font-family: 'Prompt', sans-serif; color: #01379c; ">สํานักงาน กปร.</p>
                 <p id="data3" style="font-family: 'Prompt', sans-serif; color: #01379c; ">
                     สํานักงานกปร. หรือสํานักงาน <br>
-                    คณะกรรมการพิเศษเพื่อประสานงาน <br> 
+                    คณะกรรมการพิเศษเพื่อประสานงาน <br>
                     โครงการอันเนื่องมาจากพระราชดําริมี <br>
                     วัตถุประสงค์ในการศึกษาและค้นคว้า <br>
                     เพื่อแสวงหาแนวทางและวิธีการพัฒนา <br>
                     ทางด้านต่างๆให้เหมาะสมสอดคล้องกับ <br>
                     สภาพแวดล้อมที่แตกต่างกัน <br>
                 </p>
-                
+
 
                 <p id="minihead4" style="font-family: 'Prompt', sans-serif; color: #01379c; ">กรมชลประทาน</p>
                 <p id="data4" style="font-family: 'Prompt', sans-serif; color: #01379c;">
@@ -137,15 +141,15 @@
                     กระบวนการพัฒนาแหล่งนํ้า <br>
                     และการบริหารจัดการนํ้า <br>
                 </p>
-                
+
 
             </div>
             <div class="place-area">
                 <figure>
-                    
+
 
                 </figure>
-                
+
             </div>
 
         </div>
@@ -173,6 +177,29 @@
 
     function enableScroll() {
         document.body.removeEventListener('touchmove', preventDefault);
+    }
+</script>
+
+<script type="text/javascript">
+    window.addEventListener("resize", function resizeBuilding() {
+        return window.innerWidth;
+    });
+    var w = window.innerWidth;
+    if (w < 768) {
+        changeSizetoMob();
+    }
+    if (w >= 768) {
+        changeSizetoDesk();
+    }
+    console.log(w);
+
+
+    function changeSizetoMob() {
+        document.getElementById('building').src = '../Assets/images/building2.gif';
+    }
+
+    function changeSizetoDesk() {
+        document.getElementById('building').src = '../Assets/images/buiding.gif';
     }
 </script>
 
