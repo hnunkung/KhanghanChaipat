@@ -1,7 +1,7 @@
 /* Css */
 :root {
-    --main-bg-color: #7C937B;
-    --main-blue-color: #01379c;
+    --main-bg-color: #AAC4CC;
+    --main-blue-color: #00309B;
 }
 
 html {
@@ -33,18 +33,6 @@ body {
     user-select: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
 p {
     margin-top: 0rem;
     margin-bottom: -7rem;
@@ -54,9 +42,16 @@ img {
     /* min-width: 50% */
 }
 
-
 #div1 {
     overflow-x: hidden;
+}
+
+.container {
+    background-color: var(--main-blue-color);
+    max-width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
 }
 
 .contained {
@@ -71,18 +66,40 @@ img {
 .containing-2 {
     position: relative;
     height: 750px;
-    margin-top: 6em;
-    transform: scale(1.25);
-    margin-left: 8em;
-    background-image: url(../Assets/images/kanghan-green.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
-.container-4 {
-    width: 100%;
-    height: 700px;
+.conrousel-modified {
+    padding: 5.5em 8.5em;
 }
+
+.corousel-inner-controller {
+    border: 1px solid white;
+    padding: 2em 2em;
+    height: 380px;
+}
+
+img.kanghan_people {
+    width: 100%;
+}
+
+/* set cover container */
+.contain-ing {}
+
+.contain-do {}
+
+.contain-of {
+    margin-top: -.65em;
+}
+
+.contain-turbine {
+    margin-top: -.5em;
+    margin-left: 1.75em;
+}
+
+.title-pro {
+    font-size: 25px;
+}
+
 
 /* Detail */
 .font-area {
@@ -103,6 +120,8 @@ img {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
+
+
 
 /* Blink */
 @-webkit-keyframes blinker {
@@ -214,74 +233,14 @@ img {
     padding-left: 35px !important;
 }
 
-.contain-re {
-    margin-left: -.25em;
+.col-corousel-control {
+    max-width: 48% !important;
 }
 
-.contain-ing {
-    margin-left: -.25em;
+.col-corousel-control-2 {
+    max-width: 85% !important;
 }
 
-.contain-use {
-    margin-left: 1.3em;
-}
-
-.contain-from {
-    margin-left: 2.5em;
-}
-
-.title-result {
-    margin-top: 4em;
-    margin-left: 4em;
-}
-
-.para-result {
-    margin-top: 2em;
-    margin-left: 11em;
-    width: 25em;
-    font-size: 14px;
-}
-
-.para-trophy {
-    margin-top: 2em;
-    margin-left: 7.75em;
-    width: 18em;
-    font-size: 20px;
-    border-bottom: 1px dashed grey;
-    padding-bottom: 15px;
-}
-
-/* trophy */
-.trophy_result {
-    width: 105%;
-    background: white;
-    margin-top: .5em;
-}
-
-.button-carousel {
-    margin-left: 22em;
-    position: absolute;
-}
-
-img.trophy {
-    width: 90%;
-}
-
-/* fish tank */
-img.animated-gif {
-    /* width: 100%; */
-    height: auto;
-}
-
-.fish-tank-control {
-    margin-left: -30em;
-}
-
-#line-type-result {
-    top: 2em;
-    left: 20em;
-    position: absolute;
-}
 
 #arrowOut {
     left: 80px;
@@ -301,7 +260,6 @@ img.animated-gif {
     text-overflow: clip;
     /* border: 1px solid #000000; */
     -webkit-text-stroke: 1.5px white;
-    margin-top: .2em;
 
 }
 
@@ -322,8 +280,8 @@ img.animated-gif {
 
 .letter4 {
     position: absolute;
-    top: 220px;
-    left: 35em;
+    top: 640px;
+    left: 13%;
     font-size: 25px;
     color: var(--main-blue-color);
     font-weight: 900;
@@ -352,9 +310,9 @@ img.animated-gif {
 
 .letter7 {
     position: absolute;
-    top: 3.5em;
-    left: 16.5em;
-    font-size: 1.25em;
+    top: 3em;
+    left: 5em;
+    font-size: 2.25em;
     font-weight: 900;
     color: white;
     font-family: 'prompt', sans-serif !important;
@@ -409,6 +367,11 @@ img.animated-gif {
     right: auto;
     filter: invert(0);
 
+    background-image: url(../GangHan1.svg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
     /* transform: rotate(45deg) */
 }
 
@@ -462,14 +425,60 @@ img.animated-gif {
 }
 
 
-/* font */
 
-.font-size-xxs {
-    font-size: .25em;
+
+@keyframes drift {
+
+    0%,
+    100% {
+        filter: opacity(1);
+    }
+
+    15% {
+        filter: opacity(1);
+    }
 }
 
+@keyframes bubble-1 {
+    to {
+        width: 1em;
+        height: 1em;
+        right: -6em;
+        bottom: 3em;
+    }
+}
+
+@keyframes bubble-2 {
+    to {
+        width: 2.5em;
+        height: 2.5em;
+        right: 6em;
+        bottom: 5em;
+    }
+}
+
+@keyframes bubble-3 {
+    to {
+        width: 1em;
+        height: 1em;
+        right: -11em;
+        bottom: 1em;
+    }
+
+}
+
+@keyframes bubble-4 {
+    to {
+        width: 2em;
+        height: 2em;
+        right: -10em;
+        bottom: 7em;
+    }
+}
+
+/* font */
 .font-size-xs {
-    font-size: .5em;
+    font-size: .75em;
 }
 
 .font-size-s {
@@ -541,16 +550,6 @@ img.animated-gif {
 
 @media only screen and (max-width: 1366px) {}
 
-@media only screen and (max-width: 1200px) {
-    .contain-from {
-        margin-left: 1.2em;
-    }
-
-    .contain-use {
-        margin-left: .5em;
-    }
-}
-
 @media only screen and (max-width: 1100px) {
     body {
         overflow: hidden;
@@ -580,105 +579,32 @@ img.animated-gif {
     }
 
     .containing {
-        height: 950px;
+        height: 750px;
     }
 
     .containing-2 {
         height: 1400px;
-        margin-left: 0em;
-        background-image: none;
-    }
-
-    .containing-2-img-mobile {
-        background-image: url(../Assets/images/kanghan-green-ver.svg);
-        background-size: cover;
     }
 
     .containing-3 {
-        height: 600px !important;
-        margin-left: 6em;
+        height: 700px !important;
     }
 
-    .container-4 {
-        height: 1000px;
+    /* set cover container 768px */
+    .contain-ing {}
+
+    .contain-do {}
+
+    .contain-of {
+        margin-top: .55em;
+        margin-left: -.25em !important;
     }
 
-    /* additional */
-    .contain-re {
-        margin-left: 0em;
+    .contain-turbine {
+        margin-top: 0;
+        margin-left: 0;
     }
 
-    .contain-use {
-        margin-left: 1.25em;
-    }
-
-    .contain-ing {
-        margin-left: 0em;
-    }
-
-    .contain-from {
-        margin-left: 2.2em;
-        margin-top: .5em;
-    }
-
-
-    .title-result {
-        margin-top: .25em;
-        margin-left: .5em;
-    }
-
-    .para-result {
-        margin-top: 2em;
-        margin-left: 1.5em;
-        width: 45em;
-        font-size: 15px;
-    }
-
-    .para-trophy {
-        margin-top: 2em;
-        margin-left: 1.5em;
-        width: 10em;
-        font-size: 20px;
-        border-bottom: 1px dashed grey;
-        padding-bottom: 15px;
-    }
-
-    .fish-tank-control {
-        margin-top: 9em;
-        margin-left: -36em;
-    }
-
-    img.trophy {
-        width: 80%;
-        height: 100%;
-    }
-
-    .trophy_result {
-        /* margin-top: 10em; */
-        position: absolute;
-        margin-left: -20px;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .title-trophy {
-        width: 145px;
-    }
-
-
-    #line-type-result {
-        top: 4em;
-        left: 1em;
-        position: absolute;
-        width: 363px !important;
-        height: 172px;
-    }
-
-    .button-carousel {
-        margin-left: 8em;
-        position: absolute;
-    }
 
     /* :default */
     .letter1 {
@@ -697,8 +623,8 @@ img.animated-gif {
 
     .letter4 {
         position: absolute;
-        top: 140px;
-        left: 28em;
+        top: 450px;
+        left: 55%;
         font-size: 20px;
     }
 
@@ -717,14 +643,17 @@ img.animated-gif {
     .letter7 {
         position: absolute;
         top: 18vw;
-        left: 5%;
-        font-size: 15px !important;
-        width: 25em;
-        /* color: var(--main-bg-color) !important; */
+        left: 10%;
+        font-size: 2em !important;
+        color: var(--main-bg-color) !important;
     }
 
 
     /* additional */
+    .hierachy-quality {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
 
     .unusual-flex {
         display: flex;
@@ -735,10 +664,6 @@ img.animated-gif {
 
     .after-font-size-xs {
         font-size: .65em;
-    }
-
-    .contain-from {
-        margin-left: 0em;
     }
 
 
@@ -752,17 +677,7 @@ img.animated-gif {
     }
 
     .margin-push-paragraph-backward {
-        margin-left: 2.5em;
-        margin-top: -50px;
-    }
-
-    .margin-push-paragraph-backward-1e {
-        margin-left: 1em;
-        margin-top: -50px;
-    }
-
-    .margin-push-paragraph-backward-04e {
-        margin-left: 1.2em;
+        margin-left: 2em;
         margin-top: -50px;
     }
 
@@ -802,16 +717,8 @@ img.animated-gif {
         margin-top: -150px;
     }
 
-    .margin-push-paragraph-down-1e {
-        margin-top: 1em;
-    }
-
-    .margin-push-paragraph-down-05e {
-        margin-top: .75em;
-    }
-
     .margin-push-paragraph-down-15 {
-        margin-top: 15px;
+        /* margin-top: 15px; */
     }
 
     .margin-push-paragraph-down-25 {
@@ -829,7 +736,7 @@ img.animated-gif {
 
 @media only screen and (max-width: 600px) {
     .containing {
-        height: 700px;
+        height: 750px;
     }
 
     .containing-2 {
@@ -839,47 +746,6 @@ img.animated-gif {
     .containing-type {
         height: 500px !important;
     }
-
-    .title-result {
-        margin-top: .25em;
-        margin-left: .5em;
-    }
-
-    .para-result {
-        margin-top: 2em;
-        margin-left: 1.5em;
-        width: 25em;
-        font-size: 15px;
-    }
-
-    .para-trophy {
-        margin-top: 2em;
-        margin-left: 1.5em;
-        width: 10em;
-        font-size: 20px;
-        border-bottom: 1px dashed grey;
-        padding-bottom: 15px;
-    }
-
-    .fish-tank-control {
-        margin-top: 6em;
-        margin-left: -20em;
-    }
-
-    #line-type-result {
-        top: 2em;
-        left: -1em;
-        position: absolute;
-        width: 320px !important;
-        height: 252px;
-    }
-
-    .button-carousel {
-        margin-left: 14em;
-        margin-top: -2em;
-        position: absolute;
-    }
-
 
     .padding-top-1 {
         padding-top: 1em;
@@ -895,10 +761,10 @@ img.animated-gif {
     }
 
     .letter4 {
-        position: absolute;
-        top: 254px;
-        left: 4em;
-        font-size: 16px;
+        top: 345px;
+        left: 55%;
+        width: 150px;
+        font-size: 14px;
     }
 
     .letter5 {
@@ -914,27 +780,19 @@ img.animated-gif {
     }
 
     .letter7 {
-        top: 11vw;
-        left: 7%;
-        font-size: 18px !important;
-        width: 13em;
+        top: 4em;
+        left: 10%;
+        font-size: 1.75em !important;
     }
-
 
 }
 
 @media only screen and (max-width: 414px) {
     .containing {
-        height: 700px;
+        height: 650px;
     }
 
-    .container-4 {
-        height: 850px;
-    }
 
-    /* .contain-use{
-
-    } */
     .padding-top-1 {
         padding-top: 1em;
     }
@@ -943,53 +801,16 @@ img.animated-gif {
         padding-bottom: 1em;
     }
 
-    .title-result {
-        margin-top: .25em;
-        margin-left: .5em;
-    }
-
-    .para-result {
-        margin-top: 2em;
-        margin-left: 1.5em;
-        width: 23em;
-        font-size: 12px;
-    }
-
-    .fish-tank-control {
-        margin-top: 7em;
-        margin-left: -13em;
-        width: 220%
-    }
-
-    .animated-gif {
-        width: 100%;
-    }
-
-    #line-type-result {
-        top: 1em;
-        left: -2em;
-        position: absolute;
-        width: 251px !important;
-        height: 260px;
-    }
-
-    .button-carousel {
-        margin-left: 10em;
-        margin-top: -2em;
-        position: absolute;
-    }
-
-
     .letter1 {
         font-size: 600%;
         height: 900px;
     }
 
     .letter4 {
-        top: 244px;
-        left: 21em;
-        width: 78px;
-        font-size: 13px;
+        top: 350px;
+        left: 63%;
+        width: 150px;
+        font-size: 12px;
     }
 
     .letter5 {
@@ -1004,32 +825,13 @@ img.animated-gif {
         left: 10%;
     }
 
-    .letter7 {
-        top: 11vw;
-        left: -11%;
-        font-size: 18px !important;
-        width: 13em;
-    }
-
-
     .margin-push-paragraph-backward {
-        margin-left: 1.8em;
-    }
-
-    .margin-push-paragraph-up-50-2 {
+        margin-left: 1em;
         margin-top: -50px;
     }
-
-    .margin-push-paragraph-down-05e {
-        margin-top: .75em;
-    }
 }
 
-@media only screen and (max-width: 396px) {
-    .margin-push-paragraph-backward {
-        margin-left: 1.8em;
-    }
-}
+@media only screen and (max-width: 375px) {}
 
 @media only screen and (max-width: 320px) {
     .dropbtn {
