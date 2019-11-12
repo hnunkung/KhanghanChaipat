@@ -181,17 +181,21 @@
 </script>
 
 <script type="text/javascript">
-    window.addEventListener("resize", function resizeBuilding() {
+    window.addEventListener("resize", function checkSize() {
+        console.log(window.innerWidth);
+        resizeBuilding();
         return window.innerWidth;
     });
-    var w = window.innerWidth;
-    if (w < 768) {
-        changeSizetoMob();
+
+    function resizeBuilding() {
+        console.log(window.innerWidth);
+        if (window.innerWidth < 768) {
+            changeSizetoMob();
+            console.log("เข้าแล้วอิควัย");
+        } else if (window.innerWidth >= 768) {
+            changeSizetoDesk();
+        }
     }
-    if (w >= 768) {
-        changeSizetoDesk();
-    }
-    console.log(w);
 
 
     function changeSizetoMob() {
