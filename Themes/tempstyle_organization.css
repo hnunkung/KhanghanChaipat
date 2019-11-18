@@ -75,14 +75,14 @@
      height: auto;
  }
 
- img.animatic-gif2 {
-     position: absolute;
-     z-index: 103;
-     margin-top: -170px;
-     /*    left: -65px;*/
-     width: 100%;
-     height: auto;
- }
+img.animatic-gif2 {
+         /*        position: absolute;*/
+         z-index: 103;
+         margin-top: -20vw;
+         width: 100vw;
+         height: auto;
+         margin-left: -18vw;
+}
 
  #minihead1 {
      font-size: 1.5em;
@@ -103,6 +103,7 @@
      position: absolute;
      font-weight: bold;
      margin-top: 420px;
+
  }
 
  #minihead3 {
@@ -554,10 +555,10 @@
      img.animatic-gif2 {
          position: absolute;
          z-index: 103;
-         margin-top: 4vw;
-         width: 105%;
+         margin-top: -32vw;
+         width: 400%;
          height: auto;
-         left: -7vw;
+         left: -5vw;
      }
 
      img.animatic-gif {
@@ -730,7 +731,7 @@
          /*        position: absolute;*/
          font-size: 3.6vw;
          margin-left: -3vw;
-         margin-top: 3.5vw;
+         margin-top: -33.5vw;
          font-weight: bold;
          color: rgb(234, 107, 83);
          font-family: 'Prompt', sans-serif !important;
@@ -739,10 +740,10 @@
      img.animatic-gif2 {
          /*        position: absolute;*/
          z-index: 103;
-         margin-top: -10.5vw;
+         margin-top: -20vw;
          width: 100vw;
          height: auto;
-         margin-left: -3.5vw;
+         margin-left: -18vw;
      }
 
      img.animatic-gif {
@@ -841,12 +842,12 @@
 
  }
 
- @media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 1100px) {
      body {
          overflow: hidden;
          filter: blur(20px);
      }
- }
+ }*/
 
  /*Manual Responsive Check window size*/
  /* แบ่งตามขนาด width ของ Windows ทำงานคล้าย if */
