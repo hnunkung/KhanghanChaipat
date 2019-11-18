@@ -181,11 +181,17 @@
 </script>
 
 <script type="text/javascript">
-    window.addEventListener("resize", function checkSize() {
-        console.log(window.innerWidth);
-        resizeBuilding();
-        return window.innerWidth;
-    });
+    function checkS() {
+        window.addEventListener("resize", function checkSize() {
+            console.log(window.innerWidth);
+            resizeBuilding();
+            return window.innerWidth;
+        });
+    }
+    setInterval(function checkS2() {
+        checkS();
+        // console.log(1);
+    }, 200);
 
     function resizeBuilding() {
         console.log(window.innerWidth);
@@ -200,12 +206,12 @@
 
     function changeSizetoMob() {
         document.getElementById('building').src = '../Assets/images/building2.gif';
-        document.getElementById('line03').src = '../Assets/images/line3-2.gif';
+        // document.getElementById('line03').src = '../Assets/images/line3-2.gif';
     }
 
     function changeSizetoDesk() {
         document.getElementById('building').src = '../Assets/images/buiding.gif';
-        document.getElementById('line03').src = '../Assets/images/line3.gif';
+        // document.getElementById('line03').src = '../Assets/images/line3.gif';
     }
 </script>
 
