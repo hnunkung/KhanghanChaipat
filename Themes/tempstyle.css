@@ -701,6 +701,18 @@ img.animatic-gif2 {
         height: auto;
         left: -2px;
     }
+    .footer{
+        background: #eee;
+        border-top: 0.2vw solid #ccc;
+        height: 16vw;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
+        font-size: 2.3vw;
+    }
 
     .unusual-flex {
         display: flex;
@@ -739,6 +751,7 @@ img.animatic-gif2 {
     .margin-push-paragraph-up-150 {
         margin-top: -150px;
     }
+
 
     .bubble,
     .bubble::before,
@@ -936,6 +949,17 @@ img.animatic-gif2 {
         width: 110%;
         height: auto;
         left: -2px;
+    }
+    .footer{
+        background: #eee;
+        border-top: 1.5px solid #ccc;
+        height: 120px;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
     }
 
     .bubble,
