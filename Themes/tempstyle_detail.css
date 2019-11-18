@@ -94,6 +94,17 @@ img {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
+.footer{
+    background: #eee;
+    border-top: 1.5px solid #ccc;
+    height: 120px;
+}
+#footertext{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #777;
+    text-align: center;
+}
 
 /* Blink */
 @-webkit-keyframes blinker {
