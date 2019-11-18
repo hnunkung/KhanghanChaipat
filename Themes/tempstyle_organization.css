@@ -194,7 +194,7 @@ img.animatic-gif2 {
  .margin-push-paragraph {
      margin-left: -.25em;
  }
- .footer{
+/* .footer{
      background: #eee;
     border-top: 1.5px solid #ccc;
      height: 120px;
@@ -204,7 +204,7 @@ img.animatic-gif2 {
      padding-left: 20px;
      color: #777;
      text-align: center;
- }
+ }*/
 
  /* Blink */
  @-webkit-keyframes blinker {
@@ -848,6 +848,19 @@ img.animatic-gif2 {
          background: white;
          height: 112vw;
          width: 100%;
+     }
+
+     .footer{
+        background: #eee;
+        border-top: 1.5px solid #ccc;
+        height: 120px;
+        z-index: 300;
+     }
+     #footertext{
+         padding-top: 20px;
+         padding-left: 20px;
+         color: #777;
+         text-align: center;
      }
 
 
