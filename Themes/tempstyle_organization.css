@@ -570,14 +570,17 @@ img.animatic-gif2 {
          width: 400%;
          height: auto;
          left: -5vw;
+         overflow-x: hidden;
      }
 
      img.animatic-gif {
          position: absolute;
          z-index: 101;
          margin-top: 60vw;
-         width: 100%;
+         width: 150%;
          height: auto;
+         overflow-x: hidden;
+
      }
 
      #minihead1 {
