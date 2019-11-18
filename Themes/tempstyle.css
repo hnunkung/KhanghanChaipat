@@ -66,7 +66,6 @@ h1 {
     color: white;
     font-size: 3em;
     margin-top: 400px;
-
     position: absolute;
     left: 15%;
     font-family: 'Prompt', sans-serif !important;
@@ -154,6 +153,16 @@ img.animatic-gif2 {
 
 .margin-push-paragraph {
     margin-left: -.25em;
+}
+.footer{
+    background: white;
+    height: 120px;
+}
+#footertext{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(0, 48, 155);
+    text-align: center;
 }
 
 /* Blink */
