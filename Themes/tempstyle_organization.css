@@ -200,6 +200,17 @@
  .margin-push-paragraph {
      margin-left: -.25em;
  }
+ .footer{
+     background: #eee;
+     border-top: 1.5px solid #ccc;
+     height: 120px;
+ }
+ #footertext{
+     padding-top: 20px;
+     padding-left: 20px;
+     color: #777;
+     text-align: center;
+ }
 
  /* .footer{
      background: #eee;
@@ -740,6 +751,23 @@
          font-size: 15px;
      }
 
+     .footer {
+         background: #eee;
+         border-top: 0.2vw solid #ccc;
+         height: 16vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     #footertext {
+         padding-top: 0;
+         padding-left: 0;
+         color: #777;
+         text-align: center;
+         font-size: 2.3vw;
+     }
+
      /*        .letter5 {
             position: absolute;
             margin-top: 110vw;
@@ -888,6 +916,22 @@
          color: #777;
          text-align: center;
      }
+/*     .footer {
+         background: #eee;
+         border-top: 0.2vw solid #ccc;
+         height: 16vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     #footertext {
+         padding-top: 0;
+         padding-left: 0;
+         color: #777;
+         text-align: center;
+         font-size: 2.3vw;
+     }*/
 
 
  }
