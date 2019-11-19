@@ -59,6 +59,7 @@ img {
     overflow-x: hidden;
 }
 
+
 .contained {
     display: inline;
 }
@@ -103,6 +104,7 @@ img {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
+
 /*.footer{
     background: #eee;
     border-top: 1.5px solid #ccc;
