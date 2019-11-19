@@ -92,7 +92,7 @@ img {
 .corousel-inner-controller {
     border: 1px solid white;
     padding: 2.5em 3em;
-    height: 380px;
+    height: 450px;
 }
 
 .corousel-p-hor-display {
@@ -111,6 +111,8 @@ img.kanghan_people {
     position: absolute;
     right: 3.5em;
     z-index: 800;
+    bottom: 1.5em;
+    left: 48%;
 }
 
 /* set cover container */
@@ -129,6 +131,12 @@ img.kanghan_people {
 
 .title-pro {
     font-size: 25px;
+}
+
+.pagenum-pro {
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
 }
 
 
@@ -266,11 +274,11 @@ img.kanghan_people {
 }
 
 .col-corousel-control {
-    max-width: 48% !important;
+    max-width: 65% !important;
 }
 
 .col-corousel-control-2 {
-    max-width: 85% !important;
+    max-width: 100% !important;
 }
 
 
@@ -643,7 +651,7 @@ img.kanghan_people {
 
     .col-corousel-control {
         max-width: 100% !important;
-        height: 280px;
+        height: 170px;
     }
 
     .corousel-inner-controller {
@@ -670,6 +678,7 @@ img.kanghan_people {
         justify-content: space-around;
         align-items: baseline;
         width: 3.5em;
+        left: auto;
     }
 
 

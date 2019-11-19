@@ -69,26 +69,38 @@
     <div class="container">
         <!-- start carousel -->
         <div class="conrousel-modified">
-            <div id="carouselExampleControls" class="carousel slide corousel-inner-controller" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide corousel-inner-controller" data-interval="false"
+                data-ride="carousel">
                 <div class="button-carousel">
-                    <a class="fas fa-play font-color-white" href="#carouselExampleControls" role="button"
-                        data-slide="prev" style="font-size: 25px; transform: scale(-1);">
+                    <a class="fas fa-play font-color-white" onclick="changeNumGoLeft()" href="#carouselExampleControls"
+                        role="button" data-slide="prev" style="font-size: 25px; transform: scale(-1);">
                         <span class="" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="fas fa-play font-color-white" href="#carouselExampleControls" role="button"
-                        data-slide="next" style="font-size: 25px;">
+                    <a class="fas fa-play font-color-white" onclick="changeNumGoRight()" href="#carouselExampleControls"
+                        role="button" data-slide="next" style="font-size: 25px;">
                         <span class="" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                <h1 class="font-bold font-letting-0 title-pro font-prompt font-color-white">
+                    หลักการทำงาน<br>
+                    วิธีการบำรุงรักษา<br></h1>
+                <!-- <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
+                    1</h1> -->
                 <div class="carousel-inner">
+                    <!-- <div class="carousel-item active font-color-white">
+                        1
+                    </div>
                     <div class="carousel-item active font-color-white">
+                        2
+                    </div> -->
+                    <div class="carousel-item active font-color-white">
+                        <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
+                            1</h1>
                         <div class="row">
                             <div class="col-sm-8 col-corousel-control">
-                                <h1 class="font-bold font-letting-0 title-pro font-prompt">
-                                    หลักการทำงาน<br>
-                                    วิธีการบำรุงรักษา<br></h1>
+
                                 <p class=" after-font-size-xs font-size-xs font-prompt" style="height: 300px;">
                                     กังหันนํ้าชัยพัฒนาได้นํามาติดตั้งใช้งานกับระบบบําบัด
                                     นํ้าเสียตามสถานที่ต่าง ๆ ตั้งแต่เดือนพฤษภาคม พ.ศ.
@@ -109,9 +121,6 @@
                     <div class=" carousel-item font-color-white">
                         <div class="row">
                             <div class="col-sm-8 col-corousel-control">
-                                <h1 class="font-bold font-letting-0 title-pro font-prompt">
-                                    หลักการทำงาน<br>
-                                    วิธีการบำรุงรักษา<br></h1>
                                 <p class=" after-font-size-xs font-size-xs font-prompt" style="height: 300px;">
                                     โครงกังหันนํ้ารูป ๑๒ เหลี่ยม ติดตั้งซองพรุนบรรจุนํ้า
                                     โดยรอบจํานวน ๖ ซอง
@@ -129,9 +138,6 @@
                     <div class=" carousel-item font-color-white">
                         <div class="row">
                             <div class="col col-corousel-control-2">
-                                <h1 class="font-bold font-letting-0 title-pro font-prompt">
-                                    หลักการทำงาน<br>
-                                    วิธีการบำรุงรักษา<br></h1>
                                 <div class="row">
                                     <div class="col">
                                         <p class=" after-font-size-xs font-size-xs font-prompt" style="height: 310px;">
@@ -243,6 +249,29 @@
             a.src = '../Assets/images/khanghan_people_loop.gif';
             console.log("!4");
         }, 14000);
+
+    }
+    var t = 1;
+
+    function changeNumGoRight() {
+        t++;
+        if (t == 4) {
+            t = 1;
+        }
+        var x = document.getElementById('page-ref');
+        setTimeout(function () {
+            x.innerText = `${t}`
+        }, 20);
+
+    }
+
+    function changeNumGoLeft() {
+        t--;
+        if (t == 0) {
+            t = 3;
+        }
+        document.getElementById('page-ref').innerText = `${t}`;
+
     }
 </Script>
 
