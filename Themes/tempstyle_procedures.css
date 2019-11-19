@@ -159,7 +159,7 @@ img.kanghan_people {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
-/*.footer{
+.footer{
     background: #eee;
     border-top: 1.5px solid #ccc;
     height: 120px;
@@ -169,7 +169,7 @@ img.kanghan_people {
     padding-left: 20px;
     color: #777;
     text-align: center;
-}*/
+}
 
 
 
@@ -690,6 +690,22 @@ img.kanghan_people {
         width: 3.5em;
         left: auto;
     }
+    .footer {
+        background: #eee;
+        border-top: 0.2vw solid #ccc;
+        height: 16vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footertext {
+        padding-top: 0;
+        padding-left: 0;
+        color: #777;
+        text-align: center;
+        font-size: 2.3vw;
+    }
 
 
     /* :default */
@@ -819,6 +835,8 @@ img.kanghan_people {
     .margin-push-paragraph-down-100 {
         margin-top: 100px;
     }
+
+
 }
 
 @media only screen and (max-width: 600px) {
