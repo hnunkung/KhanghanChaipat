@@ -42,7 +42,9 @@ img {
     /* min-width: 50% */
 }
 
-h1.font-bold {}
+h1.title-head {
+    font-size: 3em;
+}
 
 #div1 {
     overflow-x: hidden;
@@ -647,6 +649,10 @@ h1.font-bold {}
     body {
         overflow: auto;
         filter: none;
+    }
+
+    h1.title-head {
+        font-size: 2em;
     }
 
     .containing {
