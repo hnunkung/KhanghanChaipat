@@ -155,13 +155,14 @@ img.animatic-gif2 {
     margin-left: -.25em;
 }
 .footer{
-    background: white;
+    background: #eee;
+    border-top: 1.5px solid #ccc;
     height: 120px;
 }
 #footertext{
     padding-top: 20px;
     padding-left: 20px;
-    color: rgb(0, 48, 155);
+    color: #777;
     text-align: center;
 }
 
@@ -700,6 +701,18 @@ img.animatic-gif2 {
         height: auto;
         left: -2px;
     }
+    .footer{
+        background: #eee;
+        border-top: 0.2vw solid #ccc;
+        height: 16vw;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
+        font-size: 2.3vw;
+    }
 
     .unusual-flex {
         display: flex;
@@ -738,6 +751,7 @@ img.animatic-gif2 {
     .margin-push-paragraph-up-150 {
         margin-top: -150px;
     }
+
 
     .bubble,
     .bubble::before,
@@ -837,7 +851,7 @@ img.animatic-gif2 {
 
 
 }
-
+/*desktop*/
 @media only screen and (min-width: 768px) {
 
     /*.letter1 {
@@ -900,27 +914,28 @@ img.animatic-gif2 {
 
         z-index: 102;
         color: rgb(234, 107, 83);
-        font-size: 2vw;
+        font-size: 1.8vw;
         margin-top: 10vw;
         position: absolute;
         left: 15%;
         font-family: 'Prompt', sans-serif !important;
-        font-weight: bold;
+/*        font-weight: bold;*/
     }
 
     img.animatic-gif2 {
         position: absolute;
         z-index: 103;
         margin-top: 7vw;
-        width: 100%;
+        width: 90%;
         height: auto;
+        margin-left: 2vw;
     }
 
     #data2 {
 
         z-index: 102;
         color: white;
-        font-size: 3.5vw;
+        font-size: 3vw;
         margin-top: 17.5vw;
         position: absolute;
         left: 15%;
@@ -934,6 +949,17 @@ img.animatic-gif2 {
         width: 110%;
         height: auto;
         left: -2px;
+    }
+    .footer{
+        background: #eee;
+        border-top: 1.5px solid #ccc;
+        height: 120px;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
     }
 
     .bubble,

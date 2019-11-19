@@ -94,6 +94,17 @@ img {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
+.footer{
+    background: #eee;
+    border-top: 1.5px solid #ccc;
+    height: 120px;
+}
+#footertext{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #777;
+    text-align: center;
+}
 
 /* Blink */
 @-webkit-keyframes blinker {
@@ -830,6 +841,18 @@ img {
     .margin-push-paragraph-down-100 {
         margin-top: 100px;
     }
+    .footer{
+        background: #eee;
+        border-top: 0.2vw solid #ccc;
+        height: 16vw;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
+        font-size: 2.3vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -936,6 +959,18 @@ img {
         height: 200px;
         background-image: url(../Assets/images/GangHan2.svg);
     } */
+    .footer{
+        background: #eee;
+        border-top: 0.2vw solid #ccc;
+        height: 16vw;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
+        font-size: 2.3vw;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1012,6 +1047,18 @@ img {
     .margin-push-paragraph-backward {
         margin-left: 1em;
         margin-top: -50px;
+    }
+    .footer{
+        background: #eee;
+        border-top: 0.2vw solid #ccc;
+        height: 16vw;
+    }
+    #footertext{
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #777;
+        text-align: center;
+        font-size: 2.3vw;
     }
 }
 
