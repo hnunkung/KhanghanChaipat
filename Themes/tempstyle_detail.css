@@ -42,6 +42,8 @@ img {
     /* min-width: 50% */
 }
 
+h1.font-bold {}
+
 #div1 {
     overflow-x: hidden;
 }
@@ -94,12 +96,14 @@ img {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
-.footer{
+
+.footer {
     background: #eee;
     border-top: 1.5px solid #ccc;
     height: 120px;
 }
-#footertext{
+
+#footertext {
     padding-top: 20px;
     padding-left: 20px;
     color: #777;
@@ -654,7 +658,7 @@ img {
     }
 
     .containing-3 {
-        height: 700px !important;
+        height: 750px !important;
     }
 
 
@@ -695,7 +699,7 @@ img {
 
     .ganghan2 {
         top: 22em;
-        background-image: url(../Assets/images/GangHan2-pink.svg);
+        /* background-image: url(../Assets/images/GangHan2-pink.svg); */
     }
 
     #line-type-ganghan1 {
@@ -750,7 +754,7 @@ img {
         top: 18vw;
         left: 10%;
         font-size: 2em !important;
-        color: var(--main-bg-color) !important;
+        /* color: var(--main-bg-color) !important; */
     }
 
 
@@ -768,7 +772,7 @@ img {
     }
 
     .type-ganghan {
-        color: var(--main-blue-color);
+        /* color: var(--main-blue-color); */
     }
 
     .after-font-size-xs {
@@ -782,7 +786,7 @@ img {
     }
 
     .place-area-white {
-        background-color: white;
+        /* background-color: white; */
     }
 
     .margin-push-paragraph-backward {
@@ -841,12 +845,14 @@ img {
     .margin-push-paragraph-down-100 {
         margin-top: 100px;
     }
-    .footer{
+
+    .footer {
         background: #eee;
         border-top: 0.2vw solid #ccc;
         height: 16vw;
     }
-    #footertext{
+
+    #footertext {
         padding-top: 20px;
         padding-left: 20px;
         color: #777;
@@ -951,7 +957,7 @@ img {
     }
 
     .type-ganghan {
-        color: var(--main-blue-color);
+        /* color: var(--main-blue-color); */
     }
 
     /* .ganghan2 {
@@ -959,12 +965,13 @@ img {
         height: 200px;
         background-image: url(../Assets/images/GangHan2.svg);
     } */
-    .footer{
+    .footer {
         background: #eee;
         border-top: 0.2vw solid #ccc;
         height: 16vw;
     }
-    #footertext{
+
+    #footertext {
         padding-top: 20px;
         padding-left: 20px;
         color: #777;
@@ -1048,12 +1055,14 @@ img {
         margin-left: 1em;
         margin-top: -50px;
     }
-    .footer{
+
+    .footer {
         background: #eee;
         border-top: 0.2vw solid #ccc;
         height: 16vw;
     }
-    #footertext{
+
+    #footertext {
         padding-top: 20px;
         padding-left: 20px;
         color: #777;
