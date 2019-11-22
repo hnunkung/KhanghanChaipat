@@ -644,6 +644,9 @@ img.animatic-gif2 {
     #data1 {
         margin-top: 5vw;
         font-size: 4vw;
+        position: relative;
+        background: white;
+        z-index: 200;
 
     }
 

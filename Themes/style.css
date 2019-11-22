@@ -149,6 +149,20 @@ img {
     opacity: 1;
 }
 
+.wrap {
+    width: 5em;
+    height: 5em;
+    /* background-color: red; */
+    border: none;
+    cursor: pointer;
+    top: 3%;
+    right: 9%;
+    position: fixed;
+    margin: 20px;
+    z-index: 1;
+    transition: all .5s;
+}
+
 #arrowOut {
     left: 80px;
     font-size: 20px;
