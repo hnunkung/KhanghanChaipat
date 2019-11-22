@@ -91,8 +91,9 @@ img {
 
 .corousel-inner-controller {
     border: 1px solid white;
-    padding: 2.5em 3em;
+    /* padding: 2.5em 3em; */
     height: 450px;
+
 }
 
 .corousel-p-hor-display {
@@ -101,6 +102,11 @@ img {
 
 .corousel-p-ver-display {
     display: none;
+}
+
+.carousel-inner {
+    position: absolute;
+    top: 0;
 }
 
 img.kanghan_people {
@@ -136,7 +142,7 @@ img.kanghan_people {
 .pagenum-pro {
     position: absolute;
     right: 1.5em;
-    top: 1em;
+    top: 1.25em;
 }
 
 
@@ -159,12 +165,14 @@ img.kanghan_people {
 .font-alpha-0 {
     color: rgba(0, 0, 0, 0) !important;
 }
-.footer{
+
+.footer {
     background: #eee;
     border-top: 1.5px solid #ccc;
     height: 120px;
 }
-#footertext{
+
+#footertext {
     padding-top: 20px;
     padding-left: 20px;
     color: #777;
@@ -600,12 +608,6 @@ img.kanghan_people {
 
 @media only screen and (max-width: 1366px) {}
 
-@media only screen and (max-width: 1100px) {
-    body {
-        overflow: hidden;
-        filter: blur(20px);
-    }
-}
 
 /*ของ dropbtn*/
 
@@ -666,7 +668,7 @@ img.kanghan_people {
 
     .corousel-inner-controller {
         border: 1px solid white;
-        padding: 2em 2em;
+        /* padding: 2em 2em; */
         height: 400px;
 
     }
@@ -690,6 +692,7 @@ img.kanghan_people {
         width: 3.5em;
         left: auto;
     }
+
     .footer {
         background: #eee;
         border-top: 0.2vw solid #ccc;
@@ -892,7 +895,7 @@ img.kanghan_people {
 
     .corousel-inner-controller {
         border: 1px solid white;
-        padding: 2em 2em;
+        /* padding: 2em 2em; */
         height: 640px;
     }
 

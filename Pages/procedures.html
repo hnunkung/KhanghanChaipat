@@ -71,6 +71,10 @@
         <div class="conrousel-modified">
             <div id="carouselExampleControls" class="carousel slide corousel-inner-controller" data-interval="false"
                 data-ride="carousel">
+                <h1 class="font-bold font-letting-0 title-pro font-prompt font-color-white"
+                    style="padding: 2em 0 0 1.5em;">
+                    หลักการทำงาน<br>
+                    วิธีการบำรุงรักษา<br></h1>
                 <div class="button-carousel">
                     <a class="fas fa-play font-color-white" onclick="changeNumGoLeft()" href="#carouselExampleControls"
                         role="button" data-slide="prev" style="font-size: 25px; transform: scale(-1);">
@@ -83,9 +87,7 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <h1 class="font-bold font-letting-0 title-pro font-prompt font-color-white">
-                    หลักการทำงาน<br>
-                    วิธีการบำรุงรักษา<br></h1>
+
                 <!-- <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
                     1</h1> -->
                 <div class="carousel-inner">
@@ -98,7 +100,7 @@
                     <div class="carousel-item active font-color-white">
                         <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
                             1</h1>
-                        <div class="row">
+                        <div class="row" style="padding: 7em 2em 0 2em;">
                             <div class="col-sm-8 col-corousel-control">
 
                                 <p class=" after-font-size-xs font-size-xs font-prompt" style="height: 300px;">
@@ -119,7 +121,9 @@
                     </div>
 
                     <div class=" carousel-item font-color-white">
-                        <div class="row">
+                        <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
+                            2</h1>
+                        <div class="row" style="padding: 7em 2em 0 2em;">
                             <div class="col-sm-8 col-corousel-control">
                                 <p class=" after-font-size-xs font-size-xs font-prompt" style="height: 300px;">
                                     โครงกังหันนํ้ารูป ๑๒ เหลี่ยม ติดตั้งซองพรุนบรรจุนํ้า
@@ -136,7 +140,9 @@
                         </div>
                     </div>
                     <div class=" carousel-item font-color-white">
-                        <div class="row">
+                        <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
+                            3</h1>
+                        <div class="row" style="padding: 7em 2em 0 2em;">
                             <div class="col col-corousel-control-2">
                                 <div class="row">
                                     <div class="col">
@@ -266,7 +272,7 @@
         }
         var x = document.getElementById('page-ref');
         setTimeout(function () {
-            x.innerText = `${t}`
+            // x.innerText = `${t}`
         }, 20);
 
     }
@@ -276,7 +282,7 @@
         if (t == 0) {
             t = 3;
         }
-        document.getElementById('page-ref').innerText = `${t}`;
+        // document.getElementById('page-ref').innerText = `${t}`;
 
     }
 </Script>
