@@ -43,9 +43,9 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: black;
-}
+/* a:visited {
+    color: rgb(255, 255, 255);
+} */
 
 a:hover {
     text-decoration: none;

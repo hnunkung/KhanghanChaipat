@@ -179,7 +179,7 @@
             </div>
         </div>
         <!-- end carousel -->
-        <img src="../Assets/images/khanghan_people1.gif" id="khanhan-people" class="kanghan_people" alt=""
+        <img src="../Assets/images/gif-edit.png" id="khanhan-people" class="kanghan_people" alt=""
             style="margin-top: -2px;">
         <div class="footer" style="font-family: 'Prompt', sans-serif;">
             <div id="footertext">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์
@@ -246,21 +246,28 @@
 </script>
 <Script type="text/javascript">
     var a = document.getElementById('khanhan-people');
-    setTimeout(setKhanghanPeople(), 5000);
+    var state = 1;
 
     function setKhanghanPeople() {
-        setTimeout(function change1() {
-            a.src = '../Assets/images/khanghan_people2.gif';
-            console.log("!2");
-        }, 5000);
-        setTimeout(function change2() {
-            a.src = '../Assets/images/khanghan_people3.gif';
-            console.log("!3");
-        }, 9000);
-        setTimeout(function change3() {
-            a.src = '../Assets/images/khanghan_people_loop.gif';
-            console.log("!4");
-        }, 14000);
+
+        if (state == 1) {
+            a.src = '../Assets/images/gif-edit.png';
+        } else if (state == 2) {
+            setTimeout(function change1() {
+                a.src = '../Assets/images/gif1-edit.gif';
+                console.log("!2");
+            }, 500);
+        } else if (state == 3) {
+            setTimeout(function change3() {
+                a.src = '../Assets/images/gif2-edit.gif';
+                console.log("!3-1");
+            }, 500);
+            setTimeout(function change3() {
+                a.src = '../Assets/images/gif3-edit2loop.gif';
+                console.log("!3-2");
+            }, 1200);
+
+        }
 
     }
     var t = 1;
@@ -270,11 +277,23 @@
         if (t == 4) {
             t = 1;
         }
+
+        if (state != null) {
+            state++;
+            console.log("before :: ", state);
+            if (state == 4) {
+                state = 1;
+                console.log();
+                console.log("After:: to 1 -->", state);
+            }
+            setKhanghanPeople();
+        }
+
         var x = document.getElementById('page-ref');
         setTimeout(function () {
             // x.innerText = `${t}`
             window.scrollTo(1000, document.body.scrollHeight - 1000);
-        }, 20);
+        }, 100);
 
     }
 
@@ -283,6 +302,28 @@
         if (t == 0) {
             t = 3;
         }
+
+        if (state != null) {
+            state--;
+            console.log("before :: ", state);
+            if (state == -1) {
+                state = 3;
+                console.log();
+                console.log("to -1 -->", state);
+            } else if (state == 0) {
+                state = 3;
+                console.log();
+                console.log("to 0 -->", state);
+            }
+            setKhanghanPeople();
+        }
+
+
+        var x = document.getElementById('page-ref');
+        setTimeout(function () {
+            // x.innerText = `${t}`
+            window.scrollTo(1000, document.body.scrollHeight - 1000);
+        }, 100);
         // document.getElementById('page-ref').innerText = `${t}`;
 
     }
