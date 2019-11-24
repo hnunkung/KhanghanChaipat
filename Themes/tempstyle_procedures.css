@@ -116,10 +116,14 @@ img.kanghan_people {
 
 .button-carousel {
     position: absolute;
-    right: 3.5em;
+    right: 45%;
     z-index: 800;
     bottom: 1.5em;
     left: 48%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* set cover container */
@@ -620,6 +624,11 @@ img.kanghan_people {
 
     .dropdown-content {
         right: 5%;
+    }
+
+    .button-carousel {
+        right: 40%;
+        left: 42%;
     }
 
 }

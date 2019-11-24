@@ -19,7 +19,7 @@
 <body>
     <!-- NAVBAR Start here -->
     <div class="dropdown">
-        <div onclick="myFunction()" onmouseover="myFunction()" class="dropbtn">
+        <div onclick="myFunction()" class="dropbtn">
             <div class="dropdown blink" id="arrowOut">
                 <i class="fas fa-arrow-left"></i>
             </div>
@@ -76,16 +76,31 @@
                     หลักการทำงาน<br>
                     วิธีการบำรุงรักษา<br></h1>
                 <div class="button-carousel">
-                    <a class="fas fa-play font-color-white" onclick="changeNumGoLeft()" href="#carouselExampleControls"
-                        role="button" data-slide="prev" style="font-size: 25px; transform: scale(-1);">
-                        <span class="" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="fas fa-play font-color-white" onclick="changeNumGoRight()" href="#carouselExampleControls"
-                        role="button" data-slide="next" style="font-size: 25px;">
-                        <span class="" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div style="
+                    background-image: url(../Assets/images/botton_mockup_left.png); 
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    ">
+                        <a class="fas fa-play font-color-white" id="goleft" onclick="changeNumGoLeft()"
+                            href="#carouselExampleControls" role="button" data-slide="prev"
+                            style="font-size: 25px; transform: scale(-1);">
+                            <span class="" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </div>
+
+                    <div style="
+                    background-image: url(../Assets/images/botton_mockup_right.png); 
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    ">
+                        <a class="fas fa-play font-color-white" id="goright" onclick="changeNumGoRight()"
+                            href="#carouselExampleControls" role="button" data-slide="next" style="font-size: 25px;">
+                            <span class="" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
                 </div>
 
                 <!-- <h1 class="font-bold pagenum-pro font-prompt font-color-white " id="page-ref">
@@ -262,7 +277,7 @@
                 a.src = '../Assets/images/gif2-edit.gif';
                 console.log("!3-1");
             }, 500);
-            setTimeout(function change3() {
+            setTimeout(function change4() {
                 a.src = '../Assets/images/gif3-edit2loop.gif';
                 console.log("!3-2");
             }, 1200);
@@ -273,6 +288,11 @@
     var t = 1;
 
     function changeNumGoRight() {
+        setTimeout(function disableClick() {
+            goright.disabled = true;
+            goright.style.visibility = 'hidden';
+        }, 50);
+
         t++;
         if (t == 4) {
             t = 1;
@@ -286,6 +306,12 @@
                 console.log();
                 console.log("After:: to 1 -->", state);
             }
+            setTimeout(function ableClick() {
+                goright.disabled = false;
+                goright.style.visibility = 'visible';
+                console.log("unlock");
+            }, 1200);
+
             setKhanghanPeople();
         }
 
@@ -298,6 +324,11 @@
     }
 
     function changeNumGoLeft() {
+        setTimeout(function disableClick() {
+            goleft.disabled = true;
+            goleft.style.visibility = 'hidden';
+        }, 50);
+
         t--;
         if (t == 0) {
             t = 3;
@@ -315,8 +346,14 @@
                 console.log();
                 console.log("to 0 -->", state);
             }
+            setTimeout(function ableClick() {
+                goleft.disabled = false;
+                goleft.style.visibility = 'visible';
+                console.log("unlock");
+            }, 1200);
             setKhanghanPeople();
         }
+
 
 
         var x = document.getElementById('page-ref');
