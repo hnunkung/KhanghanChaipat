@@ -59,9 +59,15 @@ h1.title-head {
     height: 750px;
 }
 
-.containing-2 {
+#containing-2 {
     position: relative;
     height: 750px;
+    margin-top: -10em;
+}
+
+.containing-2 {
+    /*position: relative;*/
+    height: 500px;
     margin-top: 10em;
 }
 /*#containing-2 {
@@ -764,10 +770,18 @@ h1.title-head {
         position: absolute;
         right: -1vw;
         margin-top: -19vw;
+        z-index: 3000;
     }
     .place-area{
         height: 5vw;
     }
+    .containing-2 {
+        height: 40vw;
+    }
+    .containing{
+        height: 65vw;
+    }
+
 
 
 }
