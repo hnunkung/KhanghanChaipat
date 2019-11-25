@@ -771,11 +771,12 @@ h1.title-head {
     }
 
     #data6 {
-        font-size: 3vw;
+        font-size: 2.5vw;
         margin-top: 9vw;
         margin-left: 14vw;
         font-family: 'Prompt', sans-serif;
         color: #01379c;
+        height: 17vw;
 
     }
 
@@ -812,6 +813,72 @@ h1.title-head {
 
 
 
+}
+
+@media only screen and (max-width:1366px) {
+
+    #data6 {
+        font-size: 150%;
+        margin-top: 9vw;
+        margin-left: 14vw;
+        font-family: 'Prompt', sans-serif;
+        color: #01379c;
+        height: 18vw;
+
+    }
+
+    #head3 {
+        font-size: 2vw;
+        font-weight: 600;
+        margin-top: 3vw;
+        margin-left: 14vw;
+        font-family: 'Prompt', sans-serif;
+        color: white;
+        height: 6vw;
+    }
+}
+
+@media only screen and (max-width:1110px) {
+
+    #data6 {
+        font-size: 3vw;
+        margin-top: 9vw;
+        margin-left: 14vw;
+        height: 22vw;
+
+    }
+
+    #head3 {
+        font-size: 2vw;
+        font-weight: 600;
+        margin-top: 3vw;
+        margin-left: 14vw;
+        height: 9vw;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+
+
+    .containing-2 {
+        margin-top: 6em;
+    }
+
+    #data6 {
+        font-size: 3vw;
+        margin-top: 9vw;
+        margin-left: 14vw;
+        height: 26vw;
+
+    }
+
+    #head3 {
+        font-size: 2vw;
+        font-weight: 600;
+        margin-top: 3vw;
+        margin-left: 14vw;
+        height: 11vw;
+    }
 }
 
 /* iPhone 678 */
