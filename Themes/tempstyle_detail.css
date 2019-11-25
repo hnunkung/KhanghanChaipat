@@ -711,6 +711,7 @@ h1.title-head {
         color: #01379c;
         margin-top: -3.6vw;
         margin-left: 39.5vw;
+        height: ;
     }
 
     #data4 {
@@ -762,6 +763,7 @@ h1.title-head {
         margin-left: 14vw;
         font-family: 'Prompt', sans-serif;
         color: white;
+        height: 4vw;
     }
 
     #line1 {
@@ -776,7 +778,7 @@ h1.title-head {
         margin-left: 14vw;
         font-family: 'Prompt', sans-serif;
         color: #01379c;
-        height: 17vw;
+        height: 16vw;
 
     }
 
