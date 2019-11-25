@@ -70,6 +70,7 @@ h1.title-head {
     height: 500px;
     margin-top: 10em;
 }
+
 /*#containing-2 {
     position: relative;
     height: 750px;
@@ -294,8 +295,8 @@ h1.title-head {
 
 .letter4 {
     position: absolute;
-    top: 420px;
-    left: 40%;
+    top: 440px;
+    left: 23em;
     font-size: 25px;
     color: var(--main-blue-color);
     font-weight: 900;
@@ -464,7 +465,7 @@ h1.title-head {
     background-size: cover;
     background-repeat: no-repeat;
 }*/
-.ganghan2{
+.ganghan2 {
     position: absolute;
     width: 100%;
     margin-top: 2px;
@@ -623,7 +624,8 @@ h1.title-head {
 .font-bold {
     font-weight: 600;
 }
-#line1{
+
+#line1 {
     position: absolute;
     width: 30%;
     margin-top: 300px;
@@ -640,104 +642,120 @@ h1.title-head {
         margin-left: -2vw;
 
     }
-    .hierachy-container{
+
+    .hierachy-container {
         /*width: 85%;*/
         margin-left: 3vw;
     }
-    #head{
+
+    #head {
         position: absolute;
         margin-top: -2.5vw;
         font-size: 4.5vw;
         font-weight: 600;
         margin-left: 3vw;
     }
-    #img1{
+
+    #img1 {
         width: 85%;
         margin-left: 4vw;
     }
-    #headnum1{
+
+    #headnum1 {
         margin-top: 0vw;
-        margin-left:4vw; 
-        font-size: 4vw;
-        color: #01379c;
-    }
-    #headnum2{
-        margin-top: -6vw;
-        margin-left:22vw; 
-        font-size: 4vw;
-        color: #01379c;
-    }
-    #headnum3{
-        margin-top: -6vw;
-        margin-left:39.5vw; 
-        font-size: 4vw;
-        color: #01379c;
-    }
-    #headnum4{
-        margin-top: -6vw;
-        margin-left:57vw; 
+        margin-left: 4vw;
         font-size: 4vw;
         color: #01379c;
     }
 
-    #data1{
+    #headnum2 {
+        margin-top: -6vw;
+        margin-left: 22vw;
+        font-size: 4vw;
+        color: #01379c;
+    }
+
+    #headnum3 {
+        margin-top: -6vw;
+        margin-left: 39.5vw;
+        font-size: 4vw;
+        color: #01379c;
+    }
+
+    #headnum4 {
+        margin-top: -6vw;
+        margin-left: 57vw;
+        font-size: 4vw;
+        color: #01379c;
+    }
+
+    #data1 {
         font-size: 1.2vw;
         font-weight: 600;
         color: #01379c;
         margin-top: 0vw;
-        margin-left:4vw; 
+        margin-left: 4vw;
     }
-    #data2{
+
+    #data2 {
         font-size: 1.2vw;
         font-weight: 600;
         color: #01379c;
         margin-top: -5.3vw;
-        margin-left:22vw; 
+        margin-left: 22vw;
     }
-    #data3{
+
+    #data3 {
         font-size: 1.2vw;
         font-weight: 600;
         color: #01379c;
         margin-top: -3.6vw;
-        margin-left:39.5vw; 
+        margin-left: 39.5vw;
     }
-    #data4{
+
+    #data4 {
         font-size: 1.2vw;
         font-weight: 600;
         color: #01379c;
         margin-top: -5.4vw;
-        margin-left:57vw; 
+        margin-left: 57vw;
     }
-    #containing-2{
+
+    #containing-2 {
         height: 55vw;
         top: 10vw;
     }
-    #head2{
+
+    #head2 {
         position: absolute;
         font-size: 4.5vw;
         font-weight: 600;
         margin-top: -5vw;
     }
-    #data5{
+
+    #data5 {
         font-size: 1.3vw;
         font-weight: 600;
         margin-top: 5vw;
         font-family: 'Prompt', sans-serif;
 
     }
+
     #imgcer1 {
         width: 20vw;
         left: 51vw;
         top: 0vw;
 
     }
+
     #imgcer2 {
         width: 40vw;
         left: 50vw;
         top: 27.5vw;
 
     }
-    #head3{
+
+    #head3 {
         font-size: 2vw;
         font-weight: 600;
         margin-top: 5vw;
@@ -745,25 +763,28 @@ h1.title-head {
         font-family: 'Prompt', sans-serif;
         color: white;
     }
-    #line1{
+
+    #line1 {
         width: 30vw;
         margin-top: 7vw;
-        margin-left: 14vw;   
+        margin-left: 14vw;
     }
 
-    #data6{
+    #data6 {
         font-size: 3vw;
         margin-top: 9vw;
         margin-left: 14vw;
         font-family: 'Prompt', sans-serif;
-        color:  #01379c;
+        color: #01379c;
 
     }
-    #line2{
+
+    #line2 {
         width: 30vw;
         margin-top: 7vw;
-        margin-left: 14vw; 
+        margin-left: 14vw;
     }
+
     .ganghan2 {
 
         width: 40vw;
@@ -772,22 +793,27 @@ h1.title-head {
         margin-top: -19vw;
         z-index: 3000;
     }
-    .place-area{
+
+    .place-area {
         height: 5vw;
     }
+
     .containing-2 {
         height: 40vw;
     }
-    .containing{
+
+    .containing {
         height: 65vw;
     }
-    #img2{
+
+    #img2 {
         width: 0%;
     }
 
 
 
 }
+
 /* iPhone 678 */
 @media only screen and (max-width: 768px) {
     body {
@@ -803,7 +829,7 @@ h1.title-head {
         height: 850px;
     }
 
-    
+
 
     .containing-3 {
         height: 750px !important;
@@ -836,7 +862,7 @@ h1.title-head {
         right: 0;
         top: 130vw;
         margin-top: 2vw;
-       /* padding: 15px;*/
+        /* padding: 15px;*/
 
     }
 
@@ -880,9 +906,9 @@ h1.title-head {
 
     .letter4 {
         position: absolute;
-        top: 630px;
-        left: 25%;
-        font-size: 20px;
+        top: 600px;
+        left: 6vw;
+        font-size: 12pt;
     }
 
     .letter5 {
@@ -917,6 +943,7 @@ h1.title-head {
         /* justify-content: space-evenly; */
         flex-flow: wrap row;
         align-items: flex-start;
+        width: 20px;
     }
 
     .type-ganghan {
@@ -1007,67 +1034,82 @@ h1.title-head {
         text-align: center;
         font-size: 2.3vw;
     }
-    #head{
+
+    #head {
         font-size: 0vw;
     }
-    #img1{
+
+    #img1 {
         width: 0%;
     }
-    #img2{
+
+    #img2 {
         width: 100%;
         margin-top: -30vw;
     }
 
-    #containing-2{
+    #containing-2 {
         margin-top: 5vw;
         height: 300vw;
     }
-    #headnum1{
-        font-size: 0vw;
-    }
-    #headnum2{
-        font-size: 0vw;
-    }
-    #headnum3{
-        font-size: 0vw;
-    }
-    #headnum4{
+
+    #headnum1 {
         font-size: 0vw;
     }
 
-    #data1{
+    #headnum2 {
         font-size: 0vw;
     }
-    #data2{
+
+    #headnum3 {
         font-size: 0vw;
     }
-    #data3{
+
+    #headnum4 {
         font-size: 0vw;
     }
-    #data4{
+
+    #data1 {
         font-size: 0vw;
     }
-    #head2{
+
+    #data2 {
+        font-size: 0vw;
+    }
+
+    #data3 {
+        font-size: 0vw;
+    }
+
+    #data4 {
+        font-size: 0vw;
+    }
+
+    #head2 {
         margin-top: -20vw;
     }
-    #data5{
+
+    #data5 {
         margin-top: 25vw;
         font-size: 3.5vw;
     }
-    
-    .containing-2{
+
+    .containing-2 {
         margin-top: 2vw;
         height: 150vw;
     }
-    .place-area{
+
+    .place-area {
         height: 50vw;
     }
-    .ganghan2{
+
+    .ganghan2 {
         position: absolute;
         width: 100%;
         margin-top: 0vw;
     }
-    #head3{
+
+    #head3 {
         position: absolute;
         color: white;
         font-family: 'Prompt', sans-serif;
@@ -1076,28 +1118,29 @@ h1.title-head {
         margin-top: 75vw;
         margin-left: 6vw;
     }
-    
-    #line1{
+
+    #line1 {
         position: absolute;
         width: 70%;
         margin-top: 85vw;
         margin-left: 5vw;
     }
-    #data6{
+
+    #data6 {
         position: absolute;
-        color:#01379c;
+        color: #01379c;
         font-family: 'Prompt', sans-serif;
         font-size: 7vw;
         font-weight: 700;
         margin-top: 90vw;
         margin-left: 6vw;
     }
-    #line2{
+
+    #line2 {
         position: absolute;
         width: 69%;
         margin-top: 135vw;
         margin-left: 5.5vw;
     }
-    
-}
 
+}
