@@ -252,7 +252,7 @@ img {
 .para-result {
     margin-top: 2em;
     margin-left: 11em;
-    width: 25em;
+    width: calc(100% - 170px);
     font-size: 14px;
 }
 
@@ -565,6 +565,17 @@ img.animated-gif {
     }
 }
 
+@media only screen and (max-width: 1113px) {
+    .button-carousel {
+        margin-left: calc(100% - 117px);
+    }
+
+    .trophy_result {
+        width: 130%;
+        margin-top: 6.5em;
+    }
+
+}
 
 
 /*ของ dropbtn*/
@@ -612,6 +623,11 @@ img.animated-gif {
         height: 1000px;
     }
 
+    .container-5 {
+        height: 530px !important;
+    }
+
+
     /* additional */
     .contain-re {
         margin-left: 0em;
@@ -639,7 +655,7 @@ img.animated-gif {
     .para-result {
         margin-top: 2em;
         margin-left: 1.5em;
-        width: 45em;
+        width: calc(100% - 80px);
         font-size: 15px;
     }
 
@@ -658,14 +674,14 @@ img.animated-gif {
     }
 
     img.trophy {
-        width: 80%;
+        width: 95%;
         height: 100%;
     }
 
     .trophy_result {
-        /* margin-top: 10em; */
+        margin-top: 3em;
         position: absolute;
-        margin-left: -20px;
+        margin-left: -70px;
         display: flex;
         justify-content: center;
 
@@ -853,6 +869,18 @@ img.animated-gif {
     }
 }
 
+@media only screen and (max-width: 575px) {
+    img.trophy {
+        width: 63%;
+        height: 100%;
+    }
+
+    .container-5 {
+        height: 1000px !important;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .containing {
         height: 700px;
@@ -956,8 +984,13 @@ img.animated-gif {
     }
 
     .container-4 {
-        height: 850px;
+        height: 750px;
     }
+
+    .container-5 {
+        height: 930px !important;
+    }
+
 
     /* .contain-use{
 

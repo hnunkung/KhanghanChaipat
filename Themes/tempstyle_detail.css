@@ -898,7 +898,7 @@ h1.title-head {
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0 2em;
-        background-color: white;
+        background-color: var(--main-bg-color);
     }
 
     .padding-top-1 {
@@ -917,7 +917,7 @@ h1.title-head {
     .letter4 {
         position: absolute;
         top: 500px;
-        left: 20%;
+        left: 8%;
         width: 90px;
         font-size: 20px;
     }
