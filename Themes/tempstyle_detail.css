@@ -781,6 +781,9 @@ h1.title-head {
     .containing{
         height: 65vw;
     }
+    #img2{
+        width: 0%;
+    }
 
 
 
@@ -800,9 +803,7 @@ h1.title-head {
         height: 850px;
     }
 
-    .containing-2 {
-        height: 1400px;
-    }
+    
 
     .containing-3 {
         height: 750px !important;
@@ -825,17 +826,17 @@ h1.title-head {
         width: 100%;
         right: 0;
         top: 0;
-        margin-top: 2em;
-        padding: 20px;
+        margin-top: 2vw;
+        /*padding: 20px;*/
 
     }
 
     #imgcer2 {
         width: 100%;
         right: 0;
-        top: 50em;
-        margin-top: 2em;
-        padding: 15px;
+        top: 130vw;
+        margin-top: 2vw;
+       /* padding: 15px;*/
 
     }
 
@@ -845,7 +846,7 @@ h1.title-head {
     }
 
     .ganghan2 {
-        top: 22em;
+        /*top: 22em;*/
         /* background-image: url(../Assets/images/GangHan2-pink.svg); */
     }
 
@@ -1006,227 +1007,97 @@ h1.title-head {
         text-align: center;
         font-size: 2.3vw;
     }
-}
-@media only screen and (max-width: 600px) {
-    .containing {
-        height: 750px;
+    #head{
+        font-size: 0vw;
     }
-
-    .containing-2 {
-        height: 1400px;
+    #img1{
+        width: 0%;
     }
-
-    .containing-type {
-        height: 500px !important;
-    }
-
-    #imgcer1 {
+    #img2{
         width: 100%;
-        right: 0;
-        top: 0;
-        margin-top: 2em;
-        padding: 20px;
-
+        margin-top: -30vw;
     }
 
-    #imgcer2 {
+    #containing-2{
+        margin-top: 5vw;
+        height: 300vw;
+    }
+    #headnum1{
+        font-size: 0vw;
+    }
+    #headnum2{
+        font-size: 0vw;
+    }
+    #headnum3{
+        font-size: 0vw;
+    }
+    #headnum4{
+        font-size: 0vw;
+    }
+
+    #data1{
+        font-size: 0vw;
+    }
+    #data2{
+        font-size: 0vw;
+    }
+    #data3{
+        font-size: 0vw;
+    }
+    #data4{
+        font-size: 0vw;
+    }
+    #head2{
+        margin-top: -20vw;
+    }
+    #data5{
+        margin-top: 25vw;
+        font-size: 3.5vw;
+    }
+    
+    .containing-2{
+        margin-top: 2vw;
+        height: 150vw;
+    }
+    .place-area{
+        height: 50vw;
+    }
+    .ganghan2{
+        position: absolute;
         width: 100%;
-        right: 0;
-        top: 34em;
-        margin-top: 2em;
-        padding: 15px;
-
+        margin-top: 0vw;
     }
-
-
-    .place-area {
-        height: 750px;
-        background-image: url(../Assets/images/hierachy_2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0 2em;
-        background-color: white;
-    }
-
-    .padding-top-1 {
-        padding-top: 1em;
-    }
-
-    .padding-bottom-1 {
-        padding-bottom: 1em;
-    }
-
-    .letter1 {
-        font-size: 600%;
-        height: 900px;
-    }
-
-    .letter4 {
+    #head3{
         position: absolute;
-        top: 500px;
-        left: 20%;
-        width: 90px;
-        font-size: 20px;
+        color: white;
+        font-family: 'Prompt', sans-serif;
+        font-size: 5vw;
+        font-weight: 600;
+        margin-top: 75vw;
+        margin-left: 6vw;
     }
-
-    .letter5 {
+    
+    #line1{
         position: absolute;
-        top: 30px;
-        left: 10%;
+        width: 70%;
+        margin-top: 85vw;
+        margin-left: 5vw;
     }
-
-    .letter6 {
+    #data6{
         position: absolute;
-        top: 110em;
-        left: 10%;
+        color:#01379c;
+        font-family: 'Prompt', sans-serif;
+        font-size: 7vw;
+        font-weight: 700;
+        margin-top: 90vw;
+        margin-left: 6vw;
     }
-
-    .letter7 {
-        top: 4em;
-        left: 10%;
-        font-size: 1.75em !important;
+    #line2{
+        position: absolute;
+        width: 69%;
+        margin-top: 135vw;
+        margin-left: 5.5vw;
     }
-
-
-    .hierachy-quality {
-        font-size: 1.25rem;
-        line-height: 1.2;
-        display: none;
-    }
-
-    .hierachy-container {
-        display: none;
-    }
-
-    .hierachy-container-2 {
-        display: none;
-    }
-
-    .type-ganghan {
-        /* color: var(--main-blue-color); */
-    }
-
-    /* .ganghan2 {
-        width: 200px;
-        height: 200px;
-        background-image: url(../Assets/images/GangHan2.svg);
-    } */
-    .footer {
-        background: #eee;
-        border-top: 0.2vw solid #ccc;
-        height: 16vw;
-    }
-
-    #footertext {
-        padding-top: 20px;
-        padding-left: 20px;
-        color: #777;
-        text-align: center;
-        font-size: 2.3vw;
-    }
+    
 }
 
-@media only screen and (max-width: 414px) {
-    .containing {
-        height: 650px;
-    }
-
-    #imgcer1 {
-        width: 100%;
-        right: 0;
-        top: 0;
-        margin-top: 2em;
-        padding: 20px;
-
-    }
-
-    #imgcer2 {
-        width: 100%;
-        right: 0;
-        top: 30em;
-        margin-top: 2em;
-        padding: 15px;
-
-    }
-
-
-    .padding-top-1 {
-        padding-top: 1em;
-    }
-
-    .padding-bottom-1 {
-        padding-bottom: 1em;
-    }
-
-    .letter1 {
-        font-size: 600%;
-        height: 900px;
-    }
-
-    .letter4 {
-        position: absolute;
-        top: 450px;
-        left: 10%;
-        width: 95px;
-        font-size: 15px;
-    }
-
-    .letter5 {
-        position: absolute;
-        top: 30px;
-        left: 10%;
-    }
-
-    .letter6 {
-        position: absolute;
-        top: 100em;
-        left: 10%;
-    }
-
-    .hierachy-quality {
-        font-size: 1.25rem;
-        line-height: 1.2;
-        display: none;
-    }
-
-    .hierachy-container {
-        display: none;
-    }
-
-    .hierachy-container-2 {
-        display: none;
-    }
-
-    .margin-push-paragraph-backward {
-        margin-left: 1em;
-        margin-top: -50px;
-    }
-
-    .footer {
-        background: #eee;
-        border-top: 0.2vw solid #ccc;
-        height: 16vw;
-    }
-
-    #footertext {
-        padding-top: 20px;
-        padding-left: 20px;
-        color: #777;
-        text-align: center;
-        font-size: 2.3vw;
-    }
-}
-
-@media only screen and (max-width: 375px) {}
-
-@media only screen and (max-width: 320px) {
-    .dropbtn {
-        width: 56.25px;
-        height: 30px;
-    }
-
-    #arrowOut {
-        left: 55px;
-        font-size: 13px;
-    }
-}
