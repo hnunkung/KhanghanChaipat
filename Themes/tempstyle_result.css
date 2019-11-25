@@ -74,7 +74,7 @@ img {
     height: 750px;
     margin-top: 6em;
     transform: scale(1.25);
-    margin-left: 8em;
+    margin-left: 11vw;
     background-image: url(../Assets/images/kanghan-green.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -244,9 +244,22 @@ img {
     margin-left: 2.5em;
 }
 
+.title-fishtank {
+    margin-top: 8vw;
+    margin-left: 4vw;
+}
+
 .title-result {
     margin-top: 4em;
     margin-left: 4em;
+}
+
+
+.para-fishtank {
+    margin-top: 2vw;
+    margin-left: 4vw;
+    width: calc(100% - 300px);
+    font-size: 14px;
 }
 
 .para-result {
@@ -293,7 +306,7 @@ img.animated-gif {
 
 #line-type-result {
     top: 2em;
-    left: 20em;
+    left: 26vw;
     position: absolute;
 }
 
@@ -367,7 +380,7 @@ img.animated-gif {
 .letter7 {
     position: absolute;
     top: 3.5em;
-    left: 16.5em;
+    left: 26vw;
     font-size: 1.25em;
     font-weight: 900;
     color: white;
@@ -563,6 +576,15 @@ img.animated-gif {
     .contain-use {
         margin-left: .5em;
     }
+
+    .para-fishtank {
+        margin-top: 2vw;
+        margin-left: 4vw;
+        width: calc(100% - 250px);
+        font-size: 14px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1113px) {
@@ -589,6 +611,15 @@ img.animated-gif {
     .dropdown-content {
         right: 5%;
     }
+
+    #line-type-result {
+        left: 15vw;
+    }
+
+    .letter7 {
+        left: 15vw;
+    }
+
 
 }
 
@@ -634,7 +665,7 @@ img.animated-gif {
     }
 
     .contain-use {
-        margin-left: 1.25em;
+        margin-left: 1em;
     }
 
     .contain-ing {
@@ -650,6 +681,13 @@ img.animated-gif {
     .title-result {
         margin-top: .25em;
         margin-left: .5em;
+    }
+
+    .para-fishtank {
+        margin-top: 2vw;
+        margin-left: 4vw;
+        width: 145%;
+        font-size: 14px;
     }
 
     .para-result {
@@ -669,7 +707,7 @@ img.animated-gif {
     }
 
     .fish-tank-control {
-        margin-top: 9em;
+        margin-top: 14em;
         margin-left: -36em;
     }
 
@@ -804,7 +842,7 @@ img.animated-gif {
     }
 
     .margin-push-paragraph-backward-04e {
-        margin-left: 1.2em;
+        margin-left: 1em;
         margin-top: -50px;
     }
 
@@ -870,6 +908,11 @@ img.animated-gif {
 }
 
 @media only screen and (max-width: 575px) {
+
+    .para-fishtank {
+        width: 100%;
+    }
+
     img.trophy {
         width: 63%;
         height: 100%;
@@ -916,9 +959,9 @@ img.animated-gif {
     }
 
     .fish-tank-control {
-        margin-top: 8em;
-        margin-left: -20em;
-        margin-right: -8em;
+        margin-top: 14em;
+        margin-left: -35em;
+        margin-right: -4em;
     }
 
     #line-type-result {
@@ -926,7 +969,7 @@ img.animated-gif {
         left: -1em;
         position: absolute;
         width: 320px !important;
-        height: 252px;
+        height: 320px;
     }
 
     .button-carousel {
@@ -969,13 +1012,30 @@ img.animated-gif {
     }
 
     .letter7 {
-        top: 11vw;
-        left: 7%;
-        font-size: 18px !important;
+        top: 15vw;
+        left: -1%;
+        font-size: 20px !important;
         width: 13em;
     }
 
 
+}
+
+@media only screen and (max-width: 575px) {
+    .fish-tank-control {
+        margin-top: 9em;
+        margin-left: -16em;
+        margin-right: -3em;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    .letter4 {
+        top: 300px;
+        left: 21em;
+        width: 98px;
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1016,8 +1076,8 @@ img.animated-gif {
     }
 
     .fish-tank-control {
-        margin-top: 9em;
-        margin-left: -13em;
+        margin-top: 10em;
+        margin-left: -66vw;
         width: 220%
     }
 
@@ -1069,6 +1129,15 @@ img.animated-gif {
         left: -11%;
         font-size: 18px !important;
         width: 13em;
+    }
+
+    .contain-use {
+        margin-left: .5em;
+    }
+
+    .margin-push-paragraph-backward-04e {
+        margin-left: .5em;
+        margin-top: -50px;
     }
 
 
