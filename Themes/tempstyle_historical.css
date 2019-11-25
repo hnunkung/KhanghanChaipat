@@ -597,9 +597,30 @@ img.animatic-gif2 {
         filter: none !important;
     }
 
+    .containing {
+        height: 190vw;
+    }
+
     .containing-controller {
         height: 410vw !important;
         overflow: hidden !important;
+    }
+
+    .control-important {
+        margin-left: 23vw !important;
+        top: 42vw !important;
+        position: absolute;
+    }
+
+    .control-of {
+        position: absolute;
+        top: 90vw !important;
+        margin-top: 0 !important;
+
+    }
+
+    .control-project {
+        top: 1vw;
     }
 
     .curving_posture {
@@ -611,10 +632,10 @@ img.animatic-gif2 {
     }
 
     .letter1 {
-        font-size: 700%;
+        font-size: 27vw;
         white-space: nowrap;
         width: 100%;
-        height: 900px;
+        height: 190vw;
         overflow: hidden;
         text-overflow: clip;
         display: flex;
@@ -626,9 +647,9 @@ img.animatic-gif2 {
 
     .letter4 {
         position: absolute;
-        top: 635px;
+        top: 115vw;
         left: 68%;
-        font-size: 15px;
+        font-size: 10pt;
     }
 
     .letter5 {
@@ -670,7 +691,7 @@ img.animatic-gif2 {
 
         z-index: 102;
         color: rgb(234, 107, 83);
-        font-size: 2.5vw;
+        font-size: 4vw;
         margin-top: 25vw;
         position: absolute;
         left: 15%;
@@ -732,7 +753,7 @@ img.animatic-gif2 {
 
     .margin-push-paragraph-backward {
         margin-left: 1.5em;
-        margin-top: -100px;
+        margin-top: -60px;
     }
 
     .margin-push-paragraph-forward {
@@ -860,6 +881,19 @@ img.animatic-gif2 {
     }
 
 
+}
+
+@media only screen and (max-width: 414px) {
+    .letter4 {
+        font-size: 8pt;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .letter4 {
+        top: 120vw;
+        font-size: 6pt;
+    }
 }
 
 /*desktop*/
