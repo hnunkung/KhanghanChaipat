@@ -314,11 +314,15 @@
 
             setKhanghanPeople();
         }
-
+        var w = window.innerWidth;
         var x = document.getElementById('page-ref');
         setTimeout(function () {
             // x.innerText = `${t}`
-            window.scrollTo(0, document.body.scrollHeight - 1200);
+            if (w > 1440) {
+                window.scrollTo(0, document.body.scrollHeight - 1400);
+            } else {
+                window.scrollTo(0, document.body.scrollHeight - 1200);
+            }
         }, 100);
 
     }
@@ -354,12 +358,15 @@
             setKhanghanPeople();
         }
 
-
-
+        var w = window.innerWidth;
         var x = document.getElementById('page-ref');
         setTimeout(function () {
             // x.innerText = `${t}`
-            window.scrollTo(1000, document.body.scrollHeight - 1200);
+            if (w > 1440) {
+                window.scrollTo(0, document.body.scrollHeight - 1400);
+            } else {
+                window.scrollTo(0, document.body.scrollHeight - 1200);
+            }
         }, 100);
         // document.getElementById('page-ref').innerText = `${t}`;
 

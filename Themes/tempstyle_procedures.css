@@ -344,7 +344,7 @@ img.kanghan_people {
 .letter4 {
     position: absolute;
     top: 640px;
-    left: 12vw;
+    left: 7em;
     font-size: 25px;
     color: var(--main-blue-color);
     font-weight: 900;
