@@ -200,12 +200,14 @@
  .margin-push-paragraph {
      margin-left: -.25em;
  }
- .footer{
+
+ .footer {
      background: #eee;
      border-top: 1.5px solid #ccc;
      height: 120px;
  }
- #footertext{
+
+ #footertext {
      padding-top: 20px;
      padding-left: 20px;
      color: #777;
@@ -370,7 +372,7 @@
  .letter4 {
      position: absolute;
      top: 190px;
-     left: 75%;
+     left: 60vw;
      font-size: 20px;
      color: rgb(255, 145, 42);
      font-family: 'Prompt', sans-serif !important;
@@ -916,7 +918,8 @@
          color: #777;
          text-align: center;
      }
-/*     .footer {
+
+     /*     .footer {
          background: #eee;
          border-top: 0.2vw solid #ccc;
          height: 16vw;
