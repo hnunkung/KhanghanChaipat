@@ -372,7 +372,7 @@
  .letter4 {
      position: absolute;
      top: 190px;
-     left: 60vw;
+     left: 56em;
      font-size: 20px;
      color: rgb(255, 145, 42);
      font-family: 'Prompt', sans-serif !important;
