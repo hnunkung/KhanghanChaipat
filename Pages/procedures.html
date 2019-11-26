@@ -364,6 +364,8 @@
             // x.innerText = `${t}`
             if (w > 1440) {
                 window.scrollTo(0, document.body.scrollHeight - 1400);
+            } else if (w <= 414) {
+                window.scrollTo(0, document.body.scrollHeight - 1000);
             } else {
                 window.scrollTo(0, document.body.scrollHeight - 1200);
             }
