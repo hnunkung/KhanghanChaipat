@@ -1,24 +1,23 @@
-# Khang Han-naam Chaipatthana 
+# 💦 Khang Han-naam Chaipatthana 
 
 Our Majesty is aware of the seriousness of the problem. And caring for the people who have to face the problem of waste water By using mechanical aeration . Is a simple invention But is highly effective in treating waste water Which is well known as Chaipattana Water Turbine And used to improve water quality in various locations All over the region
 
-## Demo
+## 🕹 Demo
 https://hnunkung.github.io/KhanghanChaipat/
 
-# Files
+# 📂 Files
 Under construction
 
 # What we do!
-Make a website.
+Make a website from Mock-up which designed by students form Faculty of Architecture.
 
 ## Member
--  Nantatchaporn Tangsuk
+- Nantatchaporn Tangsuk
 - Rattanawich Sinborwonphichai
 
 ## On work With!
 - Front-end
 	> HTML, CSS, JS
-	> Vue.js (Maybe)
 
 - Back-end
 	> None
